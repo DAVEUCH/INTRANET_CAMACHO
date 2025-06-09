@@ -1,0 +1,34 @@
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.BLL.deps.json
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.BLL.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.BLL.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.DAL.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.Entity.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.DAL.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.Entity.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.csproj.AssemblyReference.cache
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.AssemblyInfoInputs.cache
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.AssemblyInfo.cs
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.csproj.CoreCompileInputs.cache
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaV.93BC7325.Up2Date
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\refint\SistemaVenta.BLL.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\ref\SistemaVenta.BLL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.BLL.deps.json
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.BLL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.BLL.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.DAL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.Entity.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.DAL.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\bin\Release\net6.0\SistemaVenta.Entity.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.csproj.AssemblyReference.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.AssemblyInfoInputs.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.AssemblyInfo.cs
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.csproj.CoreCompileInputs.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaV.93BC7325.Up2Date
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\refint\SistemaVenta.BLL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\ref\SistemaVenta.BLL.dll

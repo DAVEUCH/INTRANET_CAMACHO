@@ -1,0 +1,38 @@
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.IOC.deps.json
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.IOC.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.IOC.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.BLL.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.DAL.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.Entity.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.BLL.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.DAL.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.Entity.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.csproj.AssemblyReference.cache
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.AssemblyInfoInputs.cache
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.AssemblyInfo.cs
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.csproj.CoreCompileInputs.cache
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaV.CF7CC950.Up2Date
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\refint\SistemaVenta.IOC.dll
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.pdb
+C:\Users\DMARINASO\Desktop\CONSULFLEX\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\ref\SistemaVenta.IOC.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.IOC.deps.json
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.IOC.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.IOC.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.BLL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.DAL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.Entity.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.BLL.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.DAL.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\bin\Release\net6.0\SistemaVenta.Entity.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.csproj.AssemblyReference.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.GeneratedMSBuildEditorConfig.editorconfig
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.AssemblyInfoInputs.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.AssemblyInfo.cs
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.csproj.CoreCompileInputs.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaV.CF7CC950.Up2Date
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\refint\SistemaVenta.IOC.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.pdb
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\ref\SistemaVenta.IOC.dll
