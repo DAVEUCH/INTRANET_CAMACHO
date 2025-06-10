@@ -351,6 +351,28 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
             #region TipoDocumentoOC
             CreateMap<TipoDocumentoOC, VMTipoDocumentoOC>().ReverseMap();
             #endregion
+
+            #region FormInterIngre
+            //CreateMap<Rol, VMRol>().ReverseMap();
+            CreateMap<FormInterIngre, VMFormInterIngre>()
+            .ForMember(destino =>
+            destino.Estado,
+            opt => opt.MapFrom(origen => origen.Estado == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.TipoPuesto,
+            opt => opt.MapFrom(origen => origen.TipoPuesto ==true ? 1:0)
+
+            );
+
+            CreateMap<VMFormInterIngre, FormInterIngre>()
+            .ForMember(destino =>
+                destino.Estado,
+                opt => opt.MapFrom(origen => origen.Estado == 1 ? true : false))
+            .ForMember(destino =>
+                destino.TipoPuesto,
+                opt => opt.MapFrom(origen => origen.TipoPuesto == 1? true : false)
+            );
+            #endregion
         }
 
     }

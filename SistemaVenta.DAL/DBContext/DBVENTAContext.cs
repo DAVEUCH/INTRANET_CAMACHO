@@ -21,6 +21,8 @@ namespace SistemaVenta.DAL.DBContext
         public virtual DbSet<Configuracion> Configuracions { get; set; } = null!;
         public virtual DbSet<DetalleSalida> DetalleSalida { get; set; } = null!;
         public virtual DbSet<DetalleVenta> DetalleVenta { get; set; } = null!;
+        public virtual DbSet<FormInterIngre> FormInterIngres { get; set; } = null!;
+        public virtual DbSet<FormInterSal> FormInterSals { get; set; } = null!;
         public virtual DbSet<Menu> Menus { get; set; } = null!;
         public virtual DbSet<Negocio> Negocios { get; set; } = null!;
         public virtual DbSet<NumeroCorrelativo> NumeroCorrelativos { get; set; } = null!;
@@ -167,6 +169,187 @@ namespace SistemaVenta.DAL.DBContext
                     .WithMany(p => p.DetalleSalida)
                     .HasForeignKey(d => d.IdSalida)
                     .HasConstraintName("FK__DetalleSa__idSal__07C12930");
+            });
+
+            modelBuilder.Entity<FormInterIngre>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("FormInterIngre");
+
+                entity.Property(e => e.ApePersona)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("apePersona");
+
+                entity.Property(e => e.AreaPersona)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("areaPersona");
+
+                entity.Property(e => e.CargPersona)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("cargPersona");
+
+                entity.Property(e => e.DniPersona)
+                    .HasMaxLength(12)
+                    .IsUnicode(false)
+                    .HasColumnName("dniPersona");
+
+                entity.Property(e => e.Estado).HasColumnName("estado");
+
+                entity.Property(e => e.FechaIng)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaIng");
+
+                entity.Property(e => e.Hardwcel).HasColumnName("hardwcel");
+
+                entity.Property(e => e.Hardwcompu).HasColumnName("hardwcompu");
+
+                entity.Property(e => e.Hardwlapt).HasColumnName("hardwlapt");
+
+                entity.Property(e => e.IdFormInterIngre)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("idFormInterIngre");
+
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
+                entity.Property(e => e.NombPersona)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("nombPersona");
+
+                entity.Property(e => e.Observacion)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("observacion");
+
+                entity.Property(e => e.SoftAntiv).HasColumnName("softAntiv");
+
+                entity.Property(e => e.Softadob).HasColumnName("softadob");
+
+                entity.Property(e => e.Softcorr).HasColumnName("softcorr");
+
+                entity.Property(e => e.Softflex).HasColumnName("softflex");
+
+                entity.Property(e => e.Softoffice).HasColumnName("softoffice");
+
+                entity.Property(e => e.Softsys).HasColumnName("softsys");
+
+                entity.Property(e => e.TipoPuesto).HasColumnName("tipoPuesto");
+
+                entity.HasOne(d => d.IdUsuarioNavigation)
+                    .WithMany()
+                    .HasForeignKey(d => d.IdUsuario)
+                    .HasConstraintName("FK__FormInter__idUsu__5FB337D6");
+            });
+
+            modelBuilder.Entity<FormInterSal>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToTable("FormInterSal");
+
+                entity.Property(e => e.Accefex).HasColumnName("accefex");
+
+                entity.Property(e => e.Acceotro).HasColumnName("acceotro");
+
+                entity.Property(e => e.Accessys).HasColumnName("accessys");
+
+                entity.Property(e => e.ApePersona)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("apePersona");
+
+                entity.Property(e => e.AreaPersona)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("areaPersona");
+
+                entity.Property(e => e.CargPersona)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("cargPersona");
+
+                entity.Property(e => e.Correocorp).HasColumnName("correocorp");
+
+                entity.Property(e => e.DevdescripmodelLappc)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("devdescripmodelLappc");
+
+                entity.Property(e => e.Devdescripmodeotros)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("devdescripmodeotros");
+
+                entity.Property(e => e.Devdevuelto).HasColumnName("devdevuelto");
+
+                entity.Property(e => e.Devdevueltootros).HasColumnName("devdevueltootros");
+
+                entity.Property(e => e.Devnoaplica).HasColumnName("devnoaplica");
+
+                entity.Property(e => e.Devnoaplicaotros).HasColumnName("devnoaplicaotros");
+
+                entity.Property(e => e.Devobslappoc)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("devobslappoc");
+
+                entity.Property(e => e.Devobslappocotros)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("devobslappocotros");
+
+                entity.Property(e => e.DevserienumLappc)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("devserienumLappc");
+
+                entity.Property(e => e.Devserienumotros)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("devserienumotros");
+
+                entity.Property(e => e.DniPersona)
+                    .HasMaxLength(12)
+                    .IsUnicode(false)
+                    .HasColumnName("dniPersona");
+
+                entity.Property(e => e.Estado).HasColumnName("estado");
+
+                entity.Property(e => e.FechaIng)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaIng");
+
+                entity.Property(e => e.IdFormInterSal)
+                    .ValueGeneratedOnAdd()
+                    .HasColumnName("idFormInterSal");
+
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
+                entity.Property(e => e.NombPersona)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("nombPersona");
+
+                entity.Property(e => e.Observacion)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("observacion");
+
+                entity.Property(e => e.PerfilAdpersona)
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("perfilADPersona");
+
+                entity.Property(e => e.Usured).HasColumnName("usured");
+
+                entity.HasOne(d => d.IdUsuarioNavigation)
+                    .WithMany()
+                    .HasForeignKey(d => d.IdUsuario)
+                    .HasConstraintName("FK__FormInter__idUsu__619B8048");
             });
 
             modelBuilder.Entity<Menu>(entity =>

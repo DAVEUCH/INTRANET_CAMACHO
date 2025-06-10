@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\models\\viewmodels\\vmforminteringre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\models\\viewmodels\\vmforminteringre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{824967FB-E3FC-470B-A076-8B1FE5336C7E}|SistemaVenta.Entity\\SistemaVenta.Entity.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.entity\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{824967FB-E3FC-470B-A076-8B1FE5336C7E}|SistemaVenta.Entity\\SistemaVenta.Entity.csproj|solutionrelative:sistemaventa.entity\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\utilidades\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\utilidades\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\models\\viewmodels\\vmformintersal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\models\\viewmodels\\vmformintersal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\appsettings.json",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\appsettings.json",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\appsettings.json",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-21T21:30:05.414Z",
+              "DocumentIndex": 2,
+              "Title": "VMFormInterSal.cs",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterSal.cs",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterSal.cs",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterSal.cs",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterSal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T22:02:20.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.Entity\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "SistemaVenta.Entity\\Models\\Categoria.cs",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.Entity\\Models\\Categoria.cs",
-              "RelativeToolTip": "SistemaVenta.Entity\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Utilidades\\Automapper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Utilidades\\Automapper\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Utilidades\\Automapper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Utilidades\\Automapper\\AutoMapperProfile.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAGoBAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T21:28:50.058Z"
+              "WhenOpened": "2025-06-10T21:48:16.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "1e82e054-8ad0-4cac-a5e1-ad3363359119",
+        "Display": 0,
+        "X": 2,
+        "Y": 33,
+        "Width": 1565,
+        "Height": 758,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VMFormInterIngre.cs",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterIngre.cs",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterIngre.cs",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterIngre.cs",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Models\\ViewModels\\VMFormInterIngre.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T21:42:46.916Z",
+              "EditorCaption": ""
             }
           ]
         }
