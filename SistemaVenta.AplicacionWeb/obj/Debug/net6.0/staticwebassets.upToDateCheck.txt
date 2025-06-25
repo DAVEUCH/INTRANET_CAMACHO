@@ -21,6 +21,7 @@ wwwroot\js\vistas\chart-bar-demo.js
 wwwroot\js\vistas\chart-pie-demo.js
 wwwroot\js\vistas\DashBoard_Index.js
 wwwroot\js\vistas\datatables-demo.js
+wwwroot\js\vistas\FormIntIngre_Index.js
 wwwroot\js\vistas\Historial_Salida.js
 wwwroot\js\vistas\Historial_Salida2.js
 wwwroot\js\vistas\Historial_Venta.js

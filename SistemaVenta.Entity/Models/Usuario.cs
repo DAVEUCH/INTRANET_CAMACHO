@@ -7,7 +7,9 @@ namespace SistemaVenta.Entity.Models
     {
         public Usuario()
         {
+            FormInterIngres = new HashSet<FormInterIngre>();
             Venta = new HashSet<Venta>();
+            Salida = new HashSet<Salida>();
         }
 
         public int IdUsuario { get; set; }
@@ -22,6 +24,7 @@ namespace SistemaVenta.Entity.Models
         public DateTime? FechaRegistro { get; set; }
 
         public virtual Rol? IdRolNavigation { get; set; }
+        public virtual ICollection<FormInterIngre> FormInterIngres { get; set; }
         public virtual ICollection<Venta> Venta { get; set; }
         public virtual ICollection<Salida> Salida { get; set; }
     }

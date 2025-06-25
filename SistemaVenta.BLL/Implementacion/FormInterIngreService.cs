@@ -21,7 +21,9 @@ namespace SistemaVenta.BLL.Implementacion
         public async Task<List<FormInterIngre>> Lista()
         {
 
-            IQueryable<FormInterIngre> query = await _repositorio.Consultar();
+            //IQueryable<FormInterIngre> query = await _repositorio.Consultar();
+            IQueryable<FormInterIngre> query = await _repositorio.Consultar(incluirPropiedades: "IdUsuarioNavigation");
+
 
             return query.ToList();
 

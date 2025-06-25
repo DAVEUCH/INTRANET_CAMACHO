@@ -1,0 +1,261 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Estilos {
+    <!-- ============================================================
+    =ESTILOS PARA ESTA PAGINA
+    ===============================================================-->
+    <link rel="stylesheet" href="~/vendor/datatables/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/vendor/datatables/extensiones/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="~/vendor/datatables/extensiones/css/buttons.dataTables.min.css">
+
+}
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3 bg-second-primary">
+        <h6 class="m-0 font-weight-bold text-white">Lista de Registros de Ingresos</h6>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-3">
+                <button class="btn btn-success" id="btnNuevo"><i class="fas fa-plus-circle"></i> Nuevo Registro de Ingreso</button>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-bordered" id="tbdata" cellspacing="0" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Fecha Ingreso</th>
+                            <th>DNI</th>
+                            <th>Área</th>
+                            <th>Cargo</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Descripcion 1</td>
+                            <td><span class="badge badge-info">Activo</span></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Descripcion 2</td>
+                            <td><span class="badge badge-danger">No Activo</span></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  Modal-->
+<div class="modal fade" id="modalData" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6>Detalle Registro de Ingreso</h6>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <input type="hidden" value="0" id="txtId">
+
+                    <!-- BLOQUE I: Datos Generales del Usuario -->
+                    <h6 class="text-primary font-weight-bold mt-2">I. Datos Generales del Usuario</h6>
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="txtnombPersona">Nombre</label>
+                            <input type="text" class="form-control form-control-sm" id="txtnombPersona">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="txtapePersona">Apellido</label>
+                            <input type="text" class="form-control form-control-sm" id="txtapePersona">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="txtfechaIng">Fecha Ingreso</label>
+                            <input type="date" class="form-control form-control-sm" id="txtfechaIng">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="txtdniPersona">DNI</label>
+                            <input type="text" class="form-control form-control-sm" id="txtdniPersona">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="txtareaPersona">Área</label>
+                            <input type="text" class="form-control form-control-sm" id="txtareaPersona">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="txtcargPersona">Cargo</label>
+                            <input type="text" class="form-control form-control-sm" id="txtcargPersona">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkTipoPuesto">
+                                <label class="form-check-label" for="chkTipoPuesto">¿Es reemplazo? (Si está desmarcado, es puesto nuevo)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE II: Hardware Asignado -->
+                    <h6 class="text-primary font-weight-bold mt-4">II. Hardware Asignado</h6>
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkHardwLapt">
+                                <label class="form-check-label" for="chkHardwLapt">Laptop</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkHardwCompu">
+                                <label class="form-check-label" for="chkHardwCompu">Computadora</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkHardwCel">
+                                <label class="form-check-label" for="chkHardwCel">Celular</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE III: Software y Sistemas -->
+                    <h6 class="text-primary font-weight-bold mt-4">III. Software y Sistemas</h6>
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group col-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkSoftOffice">
+                                <label class="form-check-label" for="chkSoftOffice">Office</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkSoftAntiv">
+                                <label class="form-check-label" for="chkSoftAntiv">Antivirus</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkSoftAdob">
+                                <label class="form-check-label" for="chkSoftAdob">Adobe</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkSoftCorr">
+                                <label class="form-check-label" for="chkSoftCorr">Correo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkSoftSys">
+                                <label class="form-check-label" for="chkSoftSys">Sistema</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chkSoftFlex">
+                                <label class="form-check-label" for="chkSoftFlex">Flexline</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE IV: Observaciones y Estado -->
+                    <h6 class="text-primary font-weight-bold mt-4">IV. Observaciones y Estado</h6>
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="txtObservacion">Observación</label>
+                            <textarea class="form-control form-control-sm" id="txtObservacion" rows="4" maxlength="8000" placeholder="Ingrese observaciones..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="cboEstado">Estado</label>
+                            <select class="form-control form-control-sm" id="cboEstado">
+                                <option value="1">Activo</option>
+                                <option value="0">No Activo</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label for="txtUsuario">Registrado por</label>
+                                <input type="text" class="form-control form-control-sm" id="txtUsuario" readonly>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-sm" type="button" id="btnGuardar">Guardar</button>
+                <button class="btn btn-danger btn-sm" type="button" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+
+    <!-- ============================================================
+    =SCRIPTS PARA ESTA PAGINA
+    ===============================================================-->
+    <script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <script src="~/vendor/datatables/extensiones/js/dataTables.responsive.min.js"></script>
+
+    <script src="~/vendor/datatables/extensiones/js/dataTables.buttons.min.js"></script>
+    <script src="~/vendor/datatables/extensiones/js/jszip.min.js"></script>
+    <script src="~/vendor/datatables/extensiones/js/buttons.html5.min.js"></script>
+    <script src="~/vendor/datatables/extensiones/js/buttons.print.min.js"></script>
+
+    <script src="~/js/vistas/FormIntIngre_Index.js"></script>
+
+
+                    }
+

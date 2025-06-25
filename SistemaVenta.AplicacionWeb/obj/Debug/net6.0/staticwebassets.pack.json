@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\js\\vistas\\DashBoard_Index.js"
     },
     {
+      "Id": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\FormIntIngre_Index.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\FormIntIngre_Index.js"
+    },
+    {
       "Id": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Historial_Salida.js",
       "PackagePath": "staticwebassets\\js\\vistas\\Historial_Salida.js"
     },

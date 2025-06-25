@@ -79,7 +79,22 @@ namespace SistemaVenta.DAL.Implementacion
             return queryEntidad;
         }
 
+        public async Task<IQueryable<TEntity>> Consultar(string incluirPropiedades)
+        {
+            IQueryable<TEntity> query = _dbContext.Set<TEntity>();
 
-        
+            if (!string.IsNullOrWhiteSpace(incluirPropiedades))
+            {
+                foreach (var propiedad in incluirPropiedades.Split(',', StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(propiedad);
+                }
+            }
+
+            return await Task.FromResult(query);
+        }
+
+
+
     }
 }

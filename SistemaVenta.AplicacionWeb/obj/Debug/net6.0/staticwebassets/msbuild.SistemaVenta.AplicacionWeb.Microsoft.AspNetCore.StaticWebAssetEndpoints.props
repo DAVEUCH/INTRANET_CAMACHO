@@ -276,6 +276,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Xkdt4WRIZ8MFdd7U\u002BG8X\u002Bry\u002B448M67\u002BbDhf/Fz6ICYM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1120"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Xkdt4WRIZ8MFdd7U\u002BG8X\u002Bry\u002B448M67\u002BbDhf/Fz6ICYM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Jun 2025 19:25:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SistemaVenta.AplicacionWeb/js/vistas/FormIntIngre_Index.h56nr1ggdt.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\FormIntIngre_Index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h56nr1ggdt"},{"Name":"integrity","Value":"sha256-G\u002BI6mUQ683SsvQbRXHf3aKDWsrTqhWXiZzpBhbVbZjM="},{"Name":"label","Value":"_content/SistemaVenta.AplicacionWeb/js/vistas/FormIntIngre_Index.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9228"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022G\u002BI6mUQ683SsvQbRXHf3aKDWsrTqhWXiZzpBhbVbZjM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 22:15:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SistemaVenta.AplicacionWeb/js/vistas/FormIntIngre_Index.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\FormIntIngre_Index.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G\u002BI6mUQ683SsvQbRXHf3aKDWsrTqhWXiZzpBhbVbZjM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9228"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022G\u002BI6mUQ683SsvQbRXHf3aKDWsrTqhWXiZzpBhbVbZjM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 22:15:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SistemaVenta.AplicacionWeb/js/vistas/Historial_Salida.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\Historial_Salida.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

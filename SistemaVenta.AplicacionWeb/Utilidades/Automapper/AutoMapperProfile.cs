@@ -360,8 +360,37 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
             opt => opt.MapFrom(origen => origen.Estado == true ? 1 : 0))
             .ForMember(destino =>
             destino.TipoPuesto,
-            opt => opt.MapFrom(origen => origen.TipoPuesto ==true ? 1:0)
-
+            opt => opt.MapFrom(origen => origen.TipoPuesto ==true ? 1:0))
+            .ForMember(destino =>
+            destino.Hardwlapt,
+            opt => opt.MapFrom(origen => origen.Hardwlapt == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Hardwcompu,
+            opt => opt.MapFrom(origen => origen.Hardwcompu == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Hardwcel,
+            opt => opt.MapFrom(origen => origen.Hardwcel == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Softoffice,
+            opt => opt.MapFrom(origen => origen.Softoffice == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.SoftAntiv,
+            opt => opt.MapFrom(origen => origen.SoftAntiv == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Softadob,
+            opt => opt.MapFrom(origen => origen.Softadob == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Softcorr,
+            opt => opt.MapFrom(origen => origen.Softcorr == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Softsys,
+            opt => opt.MapFrom(origen => origen.Softsys == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Softflex,
+            opt => opt.MapFrom(origen => origen.Softflex == true ? 1 : 0))
+            .ForMember(destino =>
+            destino.Usuario,
+            opt => opt.MapFrom(origen => origen.IdUsuarioNavigation != null ? origen.IdUsuarioNavigation.Nombre : null)
             );
 
             CreateMap<VMFormInterIngre, FormInterIngre>()
@@ -370,7 +399,34 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
                 opt => opt.MapFrom(origen => origen.Estado == 1 ? true : false))
             .ForMember(destino =>
                 destino.TipoPuesto,
-                opt => opt.MapFrom(origen => origen.TipoPuesto == 1? true : false)
+                opt => opt.MapFrom(origen => origen.TipoPuesto == 1? true : false))
+            .ForMember(destino =>
+                destino.Hardwlapt,
+                opt => opt.MapFrom(origen => origen.Hardwlapt == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Hardwcompu,
+                opt => opt.MapFrom(origen => origen.Hardwcompu == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Hardwcel,
+                opt => opt.MapFrom(origen => origen.Hardwcel == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Softoffice,
+                opt => opt.MapFrom(origen => origen.Softoffice == 1 ? true : false))
+             .ForMember(destino =>
+                destino.SoftAntiv,
+                opt => opt.MapFrom(origen => origen.SoftAntiv == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Softadob,
+                opt => opt.MapFrom(origen => origen.Softadob == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Softcorr,
+                opt => opt.MapFrom(origen => origen.Softcorr == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Softsys,
+                opt => opt.MapFrom(origen => origen.Softsys == 1 ? true : false))
+             .ForMember(destino =>
+                destino.Softflex,
+                opt => opt.MapFrom(origen => origen.Softflex == 1 ? true : false)
             );
             #endregion
         }

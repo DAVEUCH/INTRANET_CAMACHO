@@ -15,6 +15,10 @@ namespace SistemaVenta.DAL.Interfaces
         Task<bool> Editar(TEntity entidad);
         Task<bool> Eliminar(TEntity entidad);
         Task<IQueryable<TEntity>> Consultar(Expression<Func<TEntity, bool>> filtro = null);
+        Task<IQueryable<TEntity>> Consultar(string incluirPropiedades);
+
+        //Task<IQueryable<TEntity>> Consultar(Expression<Func<TEntity, bool>> filtro = null, string incluirPropiedades = "");
+
 
     }
 }

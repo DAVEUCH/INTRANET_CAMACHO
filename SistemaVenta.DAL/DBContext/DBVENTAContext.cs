@@ -170,12 +170,14 @@ namespace SistemaVenta.DAL.DBContext
                     .HasForeignKey(d => d.IdSalida)
                     .HasConstraintName("FK__DetalleSa__idSal__07C12930");
             });
-
             modelBuilder.Entity<FormInterIngre>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.IdFormInterIngre)
+                    .HasName("PK__FormInte__715FF397EA52F6F2");
 
                 entity.ToTable("FormInterIngre");
+
+                entity.Property(e => e.IdFormInterIngre).HasColumnName("idFormInterIngre");
 
                 entity.Property(e => e.ApePersona)
                     .HasMaxLength(100)
@@ -209,10 +211,6 @@ namespace SistemaVenta.DAL.DBContext
 
                 entity.Property(e => e.Hardwlapt).HasColumnName("hardwlapt");
 
-                entity.Property(e => e.IdFormInterIngre)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("idFormInterIngre");
-
                 entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
 
                 entity.Property(e => e.NombPersona)
@@ -240,10 +238,83 @@ namespace SistemaVenta.DAL.DBContext
                 entity.Property(e => e.TipoPuesto).HasColumnName("tipoPuesto");
 
                 entity.HasOne(d => d.IdUsuarioNavigation)
-                    .WithMany()
+                    .WithMany(p => p.FormInterIngres)
                     .HasForeignKey(d => d.IdUsuario)
-                    .HasConstraintName("FK__FormInter__idUsu__5FB337D6");
+                    .HasConstraintName("FK__FormInter__idUsu__6FE99F9F");
             });
+            //modelBuilder.Entity<FormInterIngre>(entity =>
+            //{
+            //    entity.HasNoKey();
+
+            //    entity.ToTable("FormInterIngre");
+
+            //    entity.Property(e => e.ApePersona)
+            //        .HasMaxLength(100)
+            //        .IsUnicode(false)
+            //        .HasColumnName("apePersona");
+
+            //    entity.Property(e => e.AreaPersona)
+            //        .HasMaxLength(50)
+            //        .IsUnicode(false)
+            //        .HasColumnName("areaPersona");
+
+            //    entity.Property(e => e.CargPersona)
+            //        .HasMaxLength(50)
+            //        .IsUnicode(false)
+            //        .HasColumnName("cargPersona");
+
+            //    entity.Property(e => e.DniPersona)
+            //        .HasMaxLength(12)
+            //        .IsUnicode(false)
+            //        .HasColumnName("dniPersona");
+
+            //    entity.Property(e => e.Estado).HasColumnName("estado");
+
+            //    entity.Property(e => e.FechaIng)
+            //        .HasColumnType("datetime")
+            //        .HasColumnName("fechaIng");
+
+            //    entity.Property(e => e.Hardwcel).HasColumnName("hardwcel");
+
+            //    entity.Property(e => e.Hardwcompu).HasColumnName("hardwcompu");
+
+            //    entity.Property(e => e.Hardwlapt).HasColumnName("hardwlapt");
+
+            //    entity.Property(e => e.IdFormInterIngre)
+            //        .ValueGeneratedOnAdd()
+            //        .HasColumnName("idFormInterIngre");
+
+            //    entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
+            //    entity.Property(e => e.NombPersona)
+            //        .HasMaxLength(100)
+            //        .IsUnicode(false)
+            //        .HasColumnName("nombPersona");
+
+            //    entity.Property(e => e.Observacion)
+            //        .HasMaxLength(8000)
+            //        .IsUnicode(false)
+            //        .HasColumnName("observacion");
+
+            //    entity.Property(e => e.SoftAntiv).HasColumnName("softAntiv");
+
+            //    entity.Property(e => e.Softadob).HasColumnName("softadob");
+
+            //    entity.Property(e => e.Softcorr).HasColumnName("softcorr");
+
+            //    entity.Property(e => e.Softflex).HasColumnName("softflex");
+
+            //    entity.Property(e => e.Softoffice).HasColumnName("softoffice");
+
+            //    entity.Property(e => e.Softsys).HasColumnName("softsys");
+
+            //    entity.Property(e => e.TipoPuesto).HasColumnName("tipoPuesto");
+
+            //    entity.HasOne(d => d.IdUsuarioNavigation)
+            //        .WithMany()
+            //        .HasForeignKey(d => d.IdUsuario)
+            //        .HasConstraintName("FK__FormInter__idUsu__5FB337D6");
+            //});
 
             modelBuilder.Entity<FormInterSal>(entity =>
             {
