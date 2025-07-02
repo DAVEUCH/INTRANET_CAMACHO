@@ -13,5 +13,6 @@ namespace SistemaVenta.BLL.Interfaces
         Task<FormInterIngre> Crear(FormInterIngre entidad);
         Task<FormInterIngre> Editar(FormInterIngre entidad);
         Task<bool> Eliminar(int idFormInterIngre);
+        //Task<List<FormInterIngre>> Reporte(DateTime FechaInicio, DateTime FechaFin);
     }
 }

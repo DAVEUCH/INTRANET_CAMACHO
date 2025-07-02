@@ -1667,3 +1667,4 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\ne
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.genruntimeconfig.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\ref\SistemaVenta.AplicacionWeb.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.sourcelink.json
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Rotativa.AspNetCore.dll

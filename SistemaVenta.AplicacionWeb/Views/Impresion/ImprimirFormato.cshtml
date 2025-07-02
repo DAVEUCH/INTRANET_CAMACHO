@@ -1,0 +1,162 @@
+﻿@model SistemaVenta.AplicacionWeb.Models.ViewModels.VMFormInterIngrePrint
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formato de Ingreso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 6px;
+            vertical-align: top;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 35%;
+        }
+
+        .section-title {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .separator {
+            height: 15px;
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .checkbox-item {
+            margin: 5px 0;
+        }
+
+        .checkbox-label {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid black;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .checked {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="img/gci.png" alt="Logo GCI" />
+        <h2>Formato de Ingreso de Personal</h2>
+    </div>
+
+    <table>
+        <tr><td class="label">Nombres:</td><td>@Model.NombPersona</td></tr>
+        <tr><td class="label">Apellidos:</td><td>@Model.ApePersona</td></tr>
+        <tr><td class="label">Fecha de Ingreso:</td><td>@Model.FechaIng</td></tr>
+        <tr><td class="label">DNI:</td><td>@Model.DniPersona</td></tr>
+        <tr><td class="label">Área:</td><td>@Model.AreaPersona</td></tr>
+        <tr><td class="label">Cargo:</td><td>@Model.CargPersona</td></tr>
+        <tr><td class="label">Tipo de Puesto:</td><td>@Model.TipoPuesto</td></tr>
+    </table>
+
+    <div class="separator"></div>
+    <div class="section-title">Hardware Asignado</div>
+    <div class="checkbox-grid">
+        <div class="checkbox-item">
+            <span class="box @(Model.HardwLapt == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Laptop</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.HardwCompu == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Computadora</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.HardwCel == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Celular</span>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+    <div class="section-title">Software Asignado</div>
+    <div class="checkbox-grid">
+        <div class="checkbox-item">
+            <span class="box @(Model.SoftOffice == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Office</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.SoftAntiv == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Antivirus</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.SoftAdob == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Adobe</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.SoftCorr == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Correo</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.SoftSys == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Sistema</span>
+        </div>
+        <div class="checkbox-item">
+            <span class="box @(Model.SoftFlex == "Sí" ? "checked" : "")"></span>
+            <span class="checkbox-label">Flexline</span>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+    <div class="section-title">Otros</div>
+    <table>
+        <tr><td class="label">Observación:</td><td>@Model.Observacion</td></tr>
+        <tr><td class="label">Usuario Registro:</td><td>@Model.Usuario</td></tr>
+        <tr><td class="label">Estado:</td><td>@Model.Estado</td></tr>
+    </table>
+
+</body>
+</html>

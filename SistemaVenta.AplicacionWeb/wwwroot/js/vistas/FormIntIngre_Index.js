@@ -50,12 +50,19 @@ $(document).ready(function () {
             },
             {
                 "defaultContent": `
-            <button class="btn btn-primary btn-editar btn-sm mr-2">
-                <i class="fas fa-pencil-alt"></i>
-            </button>
-            <button class="btn btn-danger btn-eliminar btn-sm">
-                <i class="fas fa-trash-alt"></i>
-            </button>`,
+<div class="d-flex justify-content-center">
+        <button class="btn btn-info btn-sm btn-visualizar mr-1" title="Visualizar">
+            <i class="fas fa-eye"></i>
+        </button>
+        <button class="btn btn-primary btn-sm btn-editar mr-1" title="Editar">
+            <i class="fas fa-pencil-alt"></i>
+        </button>
+        <button class="btn btn-danger btn-sm btn-eliminar" title="Eliminar">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </div>
+
+            `,
                 "orderable": false,
                 "searchable": false,
                 "width": "80px"
@@ -107,7 +114,7 @@ function mostrarModal(modelo = MODELO_BASE) {
 
     $("#txtObservacion").val(modelo.observacion)
     $("#cboEstado").val(modelo.estado)
-    $("#txtUsuario").val(modelo.usuario ?? "")
+    $("#txtUsuario").val(modelo.usuario)
 
     $("#modalData").modal("show")
 }
@@ -225,6 +232,30 @@ $("#tbdata tbody").on("click", ".btn-editar", function () {
 
 })
 
+$('#tbdata tbody').on('click', '.btn-visualizar', function () {
+    const fila = tablaData.row($(this).closest('tr')).data();
+    if (fila) {
+        const url = `/Impresion/ImprimirFormato?idforminteringre=${fila.idFormInterIngre}`;
+        window.open(url, '_blank');
+    }
+});
+
+
+//let filaSeleccionada_2;
+//$("#tbdata tbody").on("click", ".btn-visualizar", function () {
+
+//    if ($(this).closest("tr").hasClass("child")) {
+//        filaSeleccionada_2 = $(this).closest("tr").prev();
+//    } else {
+//        filaSeleccionada_2 = $(this).closest("tr");
+//    }
+
+//    const data = tablaData.row(filaSeleccionada_2).data();
+
+//    mostrarModal(data);
+
+//})
+
 $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
     let fila;
@@ -279,5 +310,9 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
 
 })
+
+
+
+
 
 

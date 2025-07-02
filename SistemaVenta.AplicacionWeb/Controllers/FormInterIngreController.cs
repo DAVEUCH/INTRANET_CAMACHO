@@ -25,6 +25,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return View();
         }
 
+
         [HttpGet]
         public async Task<IActionResult> Lista()
         {

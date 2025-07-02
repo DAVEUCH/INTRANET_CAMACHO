@@ -3,8 +3,8 @@ wwwroot\css\normalize.css
 wwwroot\css\sb-admin-2.css
 wwwroot\css\sb-admin-2.min.css
 wwwroot\favicon.ico
-wwwroot\img\ffffffff.png
 wwwroot\img\freddy.png
+wwwroot\img\gci.png
 wwwroot\img\logo.jpeg
 wwwroot\img\pangea.jpeg
 wwwroot\img\repuestoslogo.jpg

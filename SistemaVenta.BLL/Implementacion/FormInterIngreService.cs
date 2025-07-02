@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using SistemaVenta.BLL.Interfaces;
+using SistemaVenta.DAL.DBContext;
 using SistemaVenta.DAL.Interfaces;
 using SistemaVenta.Entity.Models;
 
@@ -12,6 +14,12 @@ namespace SistemaVenta.BLL.Implementacion
     public class FormInterIngreService :IFormInterIngre
     {
         private readonly IGenericRepository<FormInterIngre> _repositorio;
+        //private readonly DBVENTAContext _dbContext;
+
+        //public FormInterIngreService(DBVENTAContext context)
+        //{
+        //    _dbContext = context;
+        //}
 
         public FormInterIngreService(IGenericRepository<FormInterIngre> repositorio)
         {
@@ -101,6 +109,19 @@ namespace SistemaVenta.BLL.Implementacion
                 throw;
             }
         }
+
+        //public async Task<List<FormInterIngre>> Reporte(DateTime FechaInicio, DateTime FechaFin)
+        //{
+
+        //    List<FormInterIngre> listaResumen = await _dbContext.FormInterIngres
+        //        .Include(v => v.IdFormInterIngre)
+        //        .Include(v => v.IdSalidaNavigation)
+        //        .ThenInclude(tdv => tdv.IdTipoDocumentoOCNavigation)
+        //        .Where(dv => dv.IdSalidaNavigation.FechaRegistro.Value.Date >= FechaInicio.Date &&
+        //            dv.IdSalidaNavigation.FechaRegistro.Value.Date <= FechaFin.Date).ToListAsync();
+
+        //    return listaResumen;
+        //}
 
     }
 }
