@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xz3lejjd6a</Fingerprint>
-      <Integrity>fXF1ZhrPieRVS/22supDuxtRFK6mgRYK5mhlPjq29Wo=</Integrity>
+      <Fingerprint>43iddvh3gb</Fingerprint>
+      <Integrity>MIpYj6M7s8nTWUKui9+GVEyiEzqa6cmkfmCXUgAK62g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\Categoria_Index.js'))</OriginalItemSpec>
@@ -606,8 +606,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iefk60bl8z</Fingerprint>
-      <Integrity>Br+yDSsJOa/WwSHyvCV/faY85nfi9S1jTUgIwGI3lnI=</Integrity>
+      <Fingerprint>zprj6fwdie</Fingerprint>
+      <Integrity>6UrTuHf9aBP7V9XxOcUEfDr4BPpX+RuQfVBfNA72GaM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\Producto_Index.js'))</OriginalItemSpec>
@@ -660,8 +660,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jov1bu2hrl</Fingerprint>
-      <Integrity>XSbGF29YNoiHFrHeG75YrogSHVGqCUMlq/u8LDITM2k=</Integrity>
+      <Fingerprint>w12bidryql</Fingerprint>
+      <Integrity>JLW4LAwN4y84i14oswSrmN6h5+R0yJUqxm/YT229gwM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\Rol_Index.js'))</OriginalItemSpec>
@@ -678,8 +678,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zxwt0wqgxy</Fingerprint>
-      <Integrity>B2yuWltzpCcMqE9DeqmUCAEEFN3l1xI9HinmdrzU65c=</Integrity>
+      <Fingerprint>bz46gdfz5q</Fingerprint>
+      <Integrity>SY1lZldpigXSbrvGG0uTvxbSC2DMDXYMeLz0Pu9nDOA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\Usuario_Index.js'))</OriginalItemSpec>

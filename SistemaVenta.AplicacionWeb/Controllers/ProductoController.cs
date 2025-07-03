@@ -72,7 +72,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Editar([FromForm] IFormFile imagen, [FromForm] string modelo)
         {
 
@@ -110,7 +110,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public async Task<IActionResult> Eliminar(int IdProducto) {
             GenericResponse<string> gResponse = new GenericResponse<string>();
 

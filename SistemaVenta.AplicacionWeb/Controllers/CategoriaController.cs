@@ -54,7 +54,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
 
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Editar([FromBody] VMCategoria modelo)
         {
             GenericResponse<VMCategoria> gResponse = new GenericResponse<VMCategoria>();
@@ -76,7 +76,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
 
-        [HttpDelete]
+        [HttpPost]
         public async Task<IActionResult> Eliminar(int IdCategoria) {
 
             GenericResponse<string> gResponse = new GenericResponse<string>();

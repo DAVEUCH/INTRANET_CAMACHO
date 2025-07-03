@@ -28,3 +28,4 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.DAL\obj\Release\net6.0\Sis
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.DAL\obj\Release\net6.0\refint\SistemaVenta.DAL.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.DAL\obj\Release\net6.0\SistemaVenta.DAL.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.DAL\obj\Release\net6.0\ref\SistemaVenta.DAL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.DAL\obj\Release\net6.0\SistemaVenta.DAL.sourcelink.json

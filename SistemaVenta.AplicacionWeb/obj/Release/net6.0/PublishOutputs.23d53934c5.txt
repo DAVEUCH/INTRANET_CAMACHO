@@ -61,6 +61,7 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\NuGet.ProjectModel.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\NuGet.Protocol.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\NuGet.Versioning.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\Rotativa.AspNetCore.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

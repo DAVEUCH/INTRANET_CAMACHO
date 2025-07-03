@@ -111,7 +111,7 @@ $("#btnGuardar").click(function () {
             })
     } else {
         fetch("/Categoria/Editar", {
-            method: "PUT",
+            method: "POST",
             headers: { "Content-Type": "application/json; charset=utf-8" },
             body: JSON.stringify(modelo)
         })
@@ -183,8 +183,12 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                 $(".showSweetAlert").LoadingOverlay("show");
 
-                fetch(`/Categoria/Eliminar?IdCategoria=${data.idCategoria}`, {
-                    method: "DELETE"
+                fetch(`/Categoria/Eliminar`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `IdCategoria=${data.idCategoria}`
                 })
                     .then(response => {
                         $(".showSweetAlert").LoadingOverlay("hide");

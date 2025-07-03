@@ -32,3 +32,4 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\Sis
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\refint\SistemaVenta.BLL.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\ref\SistemaVenta.BLL.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.BLL\obj\Release\net6.0\SistemaVenta.BLL.sourcelink.json

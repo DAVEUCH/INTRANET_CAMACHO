@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\venta\\historialventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\venta\\historialventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\salida\\historialsalida.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\salida\\historialsalida.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\reportesalida\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\reportesalida\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\plantilla\\pdfventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\plantilla\\pdfventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\impresion\\imprimirformato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\impresion\\imprimirformato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\plantillasalida\\pdfsalida.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\plantillasalida\\pdfsalida.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\wwwroot\\js\\vistas\\rol_index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\wwwroot\\js\\vistas\\rol_index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HistorialSalida.cshtml",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Salida\\HistorialSalida.cshtml",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\Salida\\HistorialSalida.cshtml",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Salida\\HistorialSalida.cshtml",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\Salida\\HistorialSalida.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T19:49:29.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HistorialVenta.cshtml",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Venta\\HistorialVenta.cshtml",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\Venta\\HistorialVenta.cshtml",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Venta\\HistorialVenta.cshtml",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\Venta\\HistorialVenta.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T19:48:38.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PDFVenta.cshtml",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Plantilla\\PDFVenta.cshtml",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\Plantilla\\PDFVenta.cshtml",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Plantilla\\PDFVenta.cshtml",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\Plantilla\\PDFVenta.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAFUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T19:45:35.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ImprimirFormato.cshtml",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Impresion\\ImprimirFormato.cshtml",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\Impresion\\ImprimirFormato.cshtml",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\Impresion\\ImprimirFormato.cshtml",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\Impresion\\ImprimirFormato.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T19:45:26.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PDFSalida.cshtml",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\PlantillaSalida\\PDFSalida.cshtml",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\PlantillaSalida\\PDFSalida.cshtml",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\PlantillaSalida\\PDFSalida.cshtml",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\PlantillaSalida\\PDFSalida.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAF4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T19:44:42.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\ReporteSalida\\Index.cshtml",
-              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\ReporteSalida\\Index.cshtml",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\ReporteSalida\\Index.cshtml",
-              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\ReporteSalida\\Index.cshtml",
+              "Title": "RolController.cs",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T19:44:22.918Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T22:38:47.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rol_Index.js",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-03T22:35:14.367Z",
               "EditorCaption": ""
             }
           ]

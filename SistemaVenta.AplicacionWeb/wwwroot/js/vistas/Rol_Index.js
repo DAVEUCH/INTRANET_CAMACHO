@@ -108,7 +108,7 @@ $("#btnGuardar").click(function () {
             })
     } else {
         fetch("/Rol/Editar", {
-            method: "PUT",
+            method: "POST",
             headers: { "Content-Type": "application/json; charset=utf-8" },
             body: JSON.stringify(modelo)
         })
@@ -150,8 +150,6 @@ $("#tbdata tbody").on("click", ".btn-editar", function () {
 
 })
 
-
-
 $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
     let fila;
@@ -180,8 +178,12 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                 $(".showSweetAlert").LoadingOverlay("show");
 
-                fetch(`/Rol/Eliminar?IdRol=${data.idRol}`, {
-                    method: "DELETE"
+                fetch(`/Rol/Eliminar`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `IdRol=${data.idRol}`
                 })
                     .then(response => {
                         $(".showSweetAlert").LoadingOverlay("hide");
@@ -191,18 +193,72 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                         if (responseJson.estado) {
 
-                            tablaData.row(fila).remove().draw()
+                            tablaData.row(fila).remove().draw();
 
-                            swal("Listo!", "El Rol fue eliminado", "success")
+                            swal("Listo!", "El Rol fue eliminado", "success");
                         } else {
-                            swal("Los sentimos", responseJson.mensaje, "error")
+                            swal("Lo sentimos", responseJson.mensaje, "error");
                         }
                     })
 
-
             }
         }
-    )
+    );
+
+});
 
 
-})
+//$("#tbdata tbody").on("click", ".btn-eliminar", function () {
+
+//    let fila;
+//    if ($(this).closest("tr").hasClass("child")) {
+//        fila = $(this).closest("tr").prev();
+//    } else {
+//        fila = $(this).closest("tr");
+//    }
+
+//    const data = tablaData.row(fila).data();
+
+//    swal({
+//        title: "¿Está seguro?",
+//        text: `Eliminar el rol "${data.descripcion}"`,
+//        type: "warning",
+//        showCancelButton: true,
+//        confirmButtonClass: "btn-danger",
+//        confirmButtonText: "Si, eliminar",
+//        cancelButtonText: "No, cancelar",
+//        closeOnConfirm: false,
+//        closeOnCancel: true
+//    },
+//        function (respuesta) {
+
+//            if (respuesta) {
+
+//                $(".showSweetAlert").LoadingOverlay("show");
+
+//                fetch(`/Rol/Eliminar?IdRol=${data.idRol}`, {
+//                    method: "DELETE"
+//                })
+//                    .then(response => {
+//                        $(".showSweetAlert").LoadingOverlay("hide");
+//                        return response.ok ? response.json() : Promise.reject(response);
+//                    })
+//                    .then(responseJson => {
+
+//                        if (responseJson.estado) {
+
+//                            tablaData.row(fila).remove().draw()
+
+//                            swal("Listo!", "El Rol fue eliminado", "success")
+//                        } else {
+//                            swal("Los sentimos", responseJson.mensaje, "error")
+//                        }
+//                    })
+
+
+//            }
+//        }
+//    )
+
+
+//})

@@ -1398,8 +1398,8 @@ C:\Users\reinp\OneDrive\Escritorio\PROYECTOS\SolucionSistemaVenta\SistemaVenta.A
 C:\Users\reinp\OneDrive\Escritorio\PROYECTOS\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\ref\SistemaVenta.AplicacionWeb.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\appsettings.Development.json
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\appsettings.json
-D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.AplicacionWeb.staticwebassets.endpoints.json
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.AplicacionWeb.staticwebassets.runtime.json
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.AplicacionWeb.staticwebassets.endpoints.json
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\SistemaVenta.AplicacionWeb.exe
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Utilidades\LibreriaPDF\libwkhtmltox.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Utilidades\LibreriaPDF\libwkhtmltox.dylib
@@ -1461,6 +1461,7 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\ne
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\NuGet.ProjectModel.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\NuGet.Protocol.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Rotativa.AspNetCore.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -1647,6 +1648,7 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\ne
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.MvcApplicationPartsAssemblyInfo.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.RazorAssemblyInfo.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.RazorAssemblyInfo.cs
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.sourcelink.json
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\scopedcss\bundle\SistemaVenta.AplicacionWeb.styles.css
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\scopedcss\projectbundle\SistemaVenta.AplicacionWeb.bundle.scp.css
@@ -1666,5 +1668,3 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\ne
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.genruntimeconfig.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\ref\SistemaVenta.AplicacionWeb.dll
-D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Debug\net6.0\SistemaVenta.AplicacionWeb.sourcelink.json
-D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Rotativa.AspNetCore.dll

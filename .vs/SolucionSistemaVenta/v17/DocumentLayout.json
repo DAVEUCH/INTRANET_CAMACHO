@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\wwwroot\\js\\vistas\\rol_index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\wwwroot\\js\\vistas\\rol_index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RolController.cs",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Controllers\\RolController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T22:38:47.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rol_Index.js",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Rol_Index.js",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-03T22:35:14.367Z",
+              "EditorCaption": ""
             }
           ]
         }

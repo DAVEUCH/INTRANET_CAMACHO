@@ -268,3 +268,5 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\SistemaVenta.AplicacionWeb.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\SistemaVenta.AplicacionWeb.genruntimeconfig.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\ref\SistemaVenta.AplicacionWeb.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\bin\Release\net6.0\Rotativa.AspNetCore.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.AplicacionWeb\obj\Release\net6.0\SistemaVenta.AplicacionWeb.sourcelink.json

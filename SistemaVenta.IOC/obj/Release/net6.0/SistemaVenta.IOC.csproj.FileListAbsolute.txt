@@ -36,3 +36,4 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\Sis
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\refint\SistemaVenta.IOC.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\ref\SistemaVenta.IOC.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Release\net6.0\SistemaVenta.IOC.sourcelink.json

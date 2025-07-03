@@ -107,9 +107,9 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\Siste
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.AssemblyInfoInputs.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.AssemblyInfo.cs
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.csproj.CoreCompileInputs.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.sourcelink.json
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaV.CF7CC950.Up2Date
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\refint\SistemaVenta.IOC.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\ref\SistemaVenta.IOC.dll
-D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.IOC\obj\Debug\net6.0\SistemaVenta.IOC.sourcelink.json

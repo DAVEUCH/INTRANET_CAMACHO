@@ -169,8 +169,9 @@ $("#btnGuardar").click(function () {
             })
     } else {
         fetch("/Producto/Editar", {
-            method: "PUT",
-            body: formData
+            method: "POST",
+            headers: { "Content-Type": "application/json; charset=utf-8" },
+            body: JSON.stringify(modelo)
         })
             .then(response => {
                 $("#modalData").find("div.modal-content").LoadingOverlay("hide");
@@ -240,8 +241,12 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                 $(".showSweetAlert").LoadingOverlay("show");
 
-                fetch(`/Producto/Eliminar?IdProducto=${data.idProducto}`, {
-                    method: "DELETE"
+                fetch(`/Producto/Eliminar`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `IdProducto=${data.idProducto}`
                 })
                     .then(response => {
                         $(".showSweetAlert").LoadingOverlay("hide");

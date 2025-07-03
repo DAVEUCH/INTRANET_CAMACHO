@@ -26,3 +26,4 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Release\net6.0\
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Release\net6.0\SistemaVenta.Entity.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Release\net6.0\SistemaVenta.Entity.genruntimeconfig.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Release\net6.0\ref\SistemaVenta.Entity.dll
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Release\net6.0\SistemaVenta.Entity.sourcelink.json

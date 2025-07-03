@@ -85,7 +85,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
         }
 
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> Editar([FromForm] IFormFile foto, [FromForm] string modelo)
         {
             GenericResponse<VMUsuario> gResponse = new GenericResponse<VMUsuario>();
@@ -122,7 +122,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
         }
 
-        [HttpDelete]
+        [HttpPost]
         public async Task<IActionResult> Eliminar(int IdUsuario) {
             GenericResponse<string> gResponse = new GenericResponse<string>();
 

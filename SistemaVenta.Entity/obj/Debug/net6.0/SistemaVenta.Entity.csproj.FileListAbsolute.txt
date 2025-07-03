@@ -76,9 +76,9 @@ D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\Si
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.AssemblyInfoInputs.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.AssemblyInfo.cs
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.csproj.CoreCompileInputs.cache
+D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.sourcelink.json
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\refint\SistemaVenta.Entity.dll
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.pdb
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.genruntimeconfig.cache
 D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\ref\SistemaVenta.Entity.dll
-D:\INTRANET CAMACHO\SolucionSistemaVenta\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.sourcelink.json

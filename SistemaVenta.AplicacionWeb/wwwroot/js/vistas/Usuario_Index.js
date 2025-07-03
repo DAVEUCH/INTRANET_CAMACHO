@@ -155,8 +155,9 @@ $("#btnGuardar").click(function () {
             })
     } else {
         fetch("/Usuario/Editar", {
-            method: "PUT",
-            body: formData
+            method: "POST",
+            headers: { "Content-Type": "application/json; charset=utf-8" },
+            body: JSON.stringify(modelo)
         })
             .then(response => {
                 $("#modalData").find("div.modal-content").LoadingOverlay("hide");
@@ -223,8 +224,12 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                 $(".showSweetAlert").LoadingOverlay("show");
 
-                fetch(`/Usuario/Eliminar?IdUsuario=${data.idUsuario}`, {
-                    method: "DELETE"
+                fetch(`/Usuario/Eliminar`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: `IdUsuario=${data.idUsuario}`
                 })
                     .then(response => {
                         $(".showSweetAlert").LoadingOverlay("hide");
