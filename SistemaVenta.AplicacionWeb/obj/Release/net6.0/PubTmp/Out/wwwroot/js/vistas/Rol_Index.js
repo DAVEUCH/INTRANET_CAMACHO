@@ -7,7 +7,7 @@
 let tablaData;
 
 $(document).ready(function () {
-
+2
 
     tablaData = $('#tbdata').DataTable({
         responsive: true,

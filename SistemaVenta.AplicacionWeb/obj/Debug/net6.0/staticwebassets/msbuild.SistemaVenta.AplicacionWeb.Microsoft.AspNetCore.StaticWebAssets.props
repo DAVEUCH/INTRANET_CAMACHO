@@ -660,8 +660,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>w12bidryql</Fingerprint>
-      <Integrity>JLW4LAwN4y84i14oswSrmN6h5+R0yJUqxm/YT229gwM=</Integrity>
+      <Fingerprint>shr1itw23r</Fingerprint>
+      <Integrity>cKfgHCSpGxM+V9pzRjn8nL/Ys/4ngCKb0v7i4lAMezE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\vistas\Rol_Index.js'))</OriginalItemSpec>
