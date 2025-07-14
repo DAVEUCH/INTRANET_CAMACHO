@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace SistemaVenta.Entity.models2
+{
+    public partial class VmoranVendorNroPedidosa
+    {
+        public string Codigo { get; set; } = null!;
+        public string Nombre { get; set; } = null!;
+        public int? NroPedidos { get; set; }
+        public DateTime? F { get; set; }
+    }
+}

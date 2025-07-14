@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace SistemaVenta.Entity.models2
+{
+    public partial class VBonificacionMonto
+    {
+        public int Pkid { get; set; }
+        public int IdproductoObsequio { get; set; }
+        public int IdunidadObsequio { get; set; }
+        public int CantidadObsequio { get; set; }
+        public int CantidadMaximaObsequio { get; set; }
+        public int CantidadMaximaPorClienteObsequio { get; set; }
+        public DateTime DesdeObsequio { get; set; }
+        public DateTime HastaObsequio { get; set; }
+        public int StockFisico { get; set; }
+        public int TieneStockFisico { get; set; }
+        public bool Activo { get; set; }
+        public bool ActivoNotaCredito { get; set; }
+        public int NumeroItems { get; set; }
+        public int Idbonificacion { get; set; }
+        public decimal Desde { get; set; }
+        public decimal Hasta { get; set; }
+        public decimal CondicionDeRango { get; set; }
+        public bool TieneStockObsequio { get; set; }
+        public decimal StockObsequio { get; set; }
+        public bool TieneCantidadPorClienteObsequio { get; set; }
+        public bool TieneVigencia { get; set; }
+        public DateTime FechaInicio { get; set; }
+        public DateTime FechaFinal { get; set; }
+        public int IdjerarquiaBonificaciones { get; set; }
+        public int Jerarquia { get; set; }
+        public int IdcategoriaCliente { get; set; }
+        public int IdtipoCliente { get; set; }
+        public int Idsucursal { get; set; }
+    }
+}

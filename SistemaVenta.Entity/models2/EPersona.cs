@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace SistemaVenta.Entity.models2
+{
+    public partial class EPersona
+    {
+        public int Id { get; set; }
+        public int IdtipoTercero { get; set; }
+        public int IdtipoDocIdentidad { get; set; }
+        public string Email { get; set; } = null!;
+        public string Web { get; set; } = null!;
+        public string Observacion { get; set; } = null!;
+        public string? DocIdentidad { get; set; }
+        public string Codigo { get; set; } = null!;
+        public string Nombre { get; set; } = null!;
+        public string ApellidoPaterno { get; set; } = null!;
+        public string ApellidoMaterno { get; set; } = null!;
+        public string PrimerNombre { get; set; } = null!;
+        public string SegundoNombre { get; set; } = null!;
+        public bool Descriptivo { get; set; }
+        public bool Activo { get; set; }
+        public bool AgenteRetencion { get; set; }
+        public bool AgentePercepcion { get; set; }
+        public bool Extranjero { get; set; }
+        public string CuentaBancaria { get; set; } = null!;
+        public DateTime FechaAniversario { get; set; }
+        public DateTime FechaCumpleaños { get; set; }
+        public int IddireccionPrincipal { get; set; }
+        public bool ExceptuadoDePercepcion { get; set; }
+    }
+}

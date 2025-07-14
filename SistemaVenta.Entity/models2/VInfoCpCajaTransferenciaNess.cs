@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace SistemaVenta.Entity.models2
+{
+    public partial class VInfoCpCajaTransferenciaNess
+    {
+        public int ComprobanteId { get; set; }
+        public string ComprobanteNumCp { get; set; } = null!;
+        public string ComprobanteNumCpContable { get; set; } = null!;
+        public DateTime ComprobanteFecha { get; set; }
+        public string? ComprobanteTipoOrigenDestino { get; set; }
+        public string? CoprobanteOrigenDestinoNombre { get; set; }
+        public string? CuentaNumero { get; set; }
+        public string? CuentaDescripcion { get; set; }
+        public string CargoAbonoDocPagoNumCp { get; set; } = null!;
+        public string CargoAbonoDocPagoMoneda { get; set; } = null!;
+        public decimal? CargoAbonoImporte { get; set; }
+        public decimal CargoAbonoCargo { get; set; }
+        public decimal CargoAbonoAbono { get; set; }
+        public string CargoAbonoDocPagoOrigenDestinoNombre { get; set; } = null!;
+        public string? Nombre { get; set; }
+        public decimal TotalSoles { get; set; }
+        public decimal TotalDolares { get; set; }
+        public string CajaSalidaCodigo { get; set; } = null!;
+        public string CajaSalidaNombre { get; set; } = null!;
+        public string CajaEntradaCodigo { get; set; } = null!;
+        public string CajaEntradaNombre { get; set; } = null!;
+        public decimal TipoCambio { get; set; }
+        public int IdtipoCp { get; set; }
+        public string ConceptoDescripcion { get; set; } = null!;
+        public string ConceptoCodgio { get; set; } = null!;
+        public string NumCp { get; set; } = null!;
+    }
+}

@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{824967FB-E3FC-470B-A076-8B1FE5336C7E}|SistemaVenta.Entity\\SistemaVenta.Entity.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.entity\\models\\tiposop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{824967FB-E3FC-470B-A076-8B1FE5336C7E}|SistemaVenta.Entity\\SistemaVenta.Entity.csproj|solutionrelative:sistemaventa.entity\\models\\tiposop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TipoSop.cs",
-              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.Entity\\Models\\TipoSop.cs",
-              "RelativeDocumentMoniker": "SistemaVenta.Entity\\Models\\TipoSop.cs",
-              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.Entity\\Models\\TipoSop.cs",
-              "RelativeToolTip": "SistemaVenta.Entity\\Models\\TipoSop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T17:37:56.549Z",
-              "EditorCaption": ""
             }
           ]
         }
