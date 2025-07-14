@@ -16,23 +16,31 @@ namespace SistemaVenta.DAL.DBContext
             : base(options)
         {
         }
-
+        public virtual DbSet<Area> Areas { get; set; } = null!;
+        public virtual DbSet<Asignado> Asignados { get; set; } = null!;
+        public virtual DbSet<CategoriaSop> CategoriaSops { get; set; } = null!;
         public virtual DbSet<Categoria> Categoria { get; set; } = null!;
         public virtual DbSet<Configuracion> Configuracions { get; set; } = null!;
         public virtual DbSet<DetalleSalida> DetalleSalida { get; set; } = null!;
         public virtual DbSet<DetalleVenta> DetalleVenta { get; set; } = null!;
+        public virtual DbSet<Empresa> Empresas { get; set; } = null!;
+        public virtual DbSet<EstadoTiket> EstadoTikets { get; set; } = null!;
         public virtual DbSet<FormInterIngre> FormInterIngres { get; set; } = null!;
         public virtual DbSet<FormInterSal> FormInterSals { get; set; } = null!;
         public virtual DbSet<Menu> Menus { get; set; } = null!;
         public virtual DbSet<Negocio> Negocios { get; set; } = null!;
         public virtual DbSet<NumeroCorrelativo> NumeroCorrelativos { get; set; } = null!;
         public virtual DbSet<NumeroCorrelativo2> NumeroCorrelativos2{ get; set; } = null!;
+        public virtual DbSet<Prioridad> Prioridads { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
         public virtual DbSet<Rol> Rols { get; set; } = null!;
         public virtual DbSet<RolMenu> RolMenus { get; set; } = null!;
         public virtual DbSet<Salida> Salida { get; set; } = null!;
+        public virtual DbSet<SubCategoriaSop> SubCategoriaSops { get; set; } = null!;
+        public virtual DbSet<Ticket> Tickets { get; set; } = null!;
         public virtual DbSet<TipoDocumentoOC> TipoDocumentoOC { get; set; } = null!;
         public virtual DbSet<TipoDocumentoVenta> TipoDocumentoVenta { get; set; } = null!;
+        public virtual DbSet<TipoSop> TipoSops { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
         public virtual DbSet<Venta> Venta { get; set; } = null!;
        
@@ -45,6 +53,78 @@ namespace SistemaVenta.DAL.DBContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Area>(entity =>
+            {
+                entity.HasKey(e => e.IdArea)
+                    .HasName("PK__Area__750ECEA42C0580F8");
+
+                entity.ToTable("Area");
+
+                entity.Property(e => e.IdArea).HasColumnName("idArea");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
+            });
+
+            modelBuilder.Entity<Asignado>(entity =>
+            {
+                entity.ToTable("asignado");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Descriptione)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("descriptione");
+
+                entity.Property(e => e.Title)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("title");
+
+                entity.Property(e => e.UpdatedAt)
+                    .HasColumnType("datetime")
+                    .HasColumnName("updated_at");
+            });
+
+            modelBuilder.Entity<CategoriaSop>(entity =>
+            {
+                entity.HasKey(e => e.IdCategoriaSop)
+                    .HasName("PK__Categori__CD2D717A0294A0D5");
+
+                entity.ToTable("CategoriaSop");
+
+                entity.Property(e => e.IdCategoriaSop).HasColumnName("idCategoriaSop");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.IdSubCategoriaSop).HasColumnName("idSubCategoriaSop");
+
+                entity.HasOne(d => d.IdSubCategoriaSopNavigation)
+                    .WithMany(p => p.CategoriaSops)
+                    .HasForeignKey(d => d.IdSubCategoriaSop)
+                    .HasConstraintName("FK__Categoria__idSub__4F47C5E3");
+            });
+
             modelBuilder.Entity<Categoria>(entity =>
             {
                 entity.HasKey(e => e.IdCategoria)
@@ -127,6 +207,50 @@ namespace SistemaVenta.DAL.DBContext
                     .WithMany(p => p.DetalleVenta)
                     .HasForeignKey(d => d.IdVenta)
                     .HasConstraintName("FK__DetalleVe__idVen__300424B4");
+            });
+
+            modelBuilder.Entity<Empresa>(entity =>
+            {
+                entity.HasKey(e => e.IdEmpresa)
+                    .HasName("PK__Empresa__75D2CED45031A3CF");
+
+                entity.ToTable("Empresa");
+
+                entity.Property(e => e.IdEmpresa).HasColumnName("idEmpresa");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
+            });
+
+            modelBuilder.Entity<EstadoTiket>(entity =>
+            {
+                entity.HasKey(e => e.IdEstado)
+                    .HasName("PK__Estado_t__62EA894A40A6A487");
+
+                entity.ToTable("Estado_tiket");
+
+                entity.Property(e => e.IdEstado).HasColumnName("idEstado");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
             });
 
             modelBuilder.Entity<DetalleSalida>(entity =>
@@ -569,6 +693,28 @@ namespace SistemaVenta.DAL.DBContext
                 entity.Property(e => e.UltimoNumero).HasColumnName("ultimoNumero");
             });
 
+            modelBuilder.Entity<Prioridad>(entity =>
+            {
+                entity.HasKey(e => e.IdPrioridad)
+                    .HasName("PK__Priorida__00E959EE497B0A4B");
+
+                entity.ToTable("Prioridad");
+
+                entity.Property(e => e.IdPrioridad).HasColumnName("idPrioridad");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
+            });
+
             modelBuilder.Entity<Producto>(entity =>
             {
                 entity.HasKey(e => e.IdProducto)
@@ -722,7 +868,7 @@ namespace SistemaVenta.DAL.DBContext
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuario__645723A6E5D3BBB4");
+                    .HasName("PK__Usuario__645723A645CECB1A");
 
                 entity.ToTable("Usuario");
 
@@ -745,7 +891,11 @@ namespace SistemaVenta.DAL.DBContext
                     .HasColumnName("fechaRegistro")
                     .HasDefaultValueSql("(getdate())");
 
+
+                entity.Property(e => e.IdArea).HasColumnName("idArea");
+                entity.Property(e => e.IdEmpresa).HasColumnName("idEmpresa");
                 entity.Property(e => e.IdRol).HasColumnName("idRol");
+                entity.Property(e => e.Kind).HasColumnName("kind");
 
                 entity.Property(e => e.Nombre)
                     .HasMaxLength(50)
@@ -767,10 +917,20 @@ namespace SistemaVenta.DAL.DBContext
                     .IsUnicode(false)
                     .HasColumnName("urlFoto");
 
+                entity.HasOne(d => d.IdAreaNavigation)
+                      .WithMany(p => p.Usuarios)
+                      .HasForeignKey(d => d.IdArea)
+                      .HasConstraintName("FK__Usuario__idArea__1F98B2C1");
+
+                entity.HasOne(d => d.IdEmpresaNavigation)
+                    .WithMany(p => p.Usuarios)
+                    .HasForeignKey(d => d.IdEmpresa)
+                    .HasConstraintName("FK__Usuario__idEmpre__208CD6FA");
+
                 entity.HasOne(d => d.IdRolNavigation)
                     .WithMany(p => p.Usuarios)
                     .HasForeignKey(d => d.IdRol)
-                    .HasConstraintName("FK__Usuario__idRol__1BFD2C07");
+                    .HasConstraintName("FK__Usuario__idRol__1EA48E88");
             });
 
             modelBuilder.Entity<Venta>(entity =>
@@ -875,6 +1035,111 @@ namespace SistemaVenta.DAL.DBContext
                     .WithMany(p => p.Salida)
                     .HasForeignKey(d => d.IdUsuario)
                     .HasConstraintName("FK__Salida__idUsuari__03F0984C");
+            });
+
+            modelBuilder.Entity<SubCategoriaSop>(entity =>
+            {
+                entity.HasKey(e => e.IdSubCategoriaSop)
+                    .HasName("PK__SubCateg__9EB83E1B69F4E778");
+
+                entity.ToTable("SubCategoriaSop");
+
+                entity.Property(e => e.IdSubCategoriaSop).HasColumnName("idSubCategoriaSop");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(30)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.EsActivo).HasColumnName("esActivo");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
+                entity.HasOne(d => d.IdUsuarioNavigation)
+                    .WithMany(p => p.SubCategoriaSops)
+                    .HasForeignKey(d => d.IdUsuario)
+                    .HasConstraintName("FK__SubCatego__idUsu__4B7734FF");
+            });
+
+            modelBuilder.Entity<Ticket>(entity =>
+            {
+                entity.HasKey(e => e.IdTicket);
+
+                entity.ToTable("Ticket");
+
+                entity.Property(e => e.IdTicket)
+                    .ValueGeneratedNever()
+                    .HasColumnName("idTicket");
+
+                entity.Property(e => e.ArchivoHash)
+                    .IsUnicode(false)
+                    .HasColumnName("archivoHash");
+
+                entity.Property(e => e.Descripcion)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("descripcion");
+
+                entity.Property(e => e.FechaActualizacion)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaActualizacion")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.FechaRegistro)
+                    .HasColumnType("datetime")
+                    .HasColumnName("fechaRegistro")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.IdArea).HasColumnName("idArea");
+
+                entity.Property(e => e.IdAsignado).HasColumnName("idAsignado");
+
+                entity.Property(e => e.IdCategoriaSop).HasColumnName("idCategoriaSop");
+
+                entity.Property(e => e.IdEmpresa).HasColumnName("idEmpresa");
+
+                entity.Property(e => e.IdEstadoTiket).HasColumnName("idEstado_tiket");
+
+                entity.Property(e => e.IdPrioridad).HasColumnName("idPrioridad");
+
+                entity.Property(e => e.IdTipoSop).HasColumnName("idTipoSop");
+
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
+                entity.Property(e => e.Titulo)
+                    .HasMaxLength(8000)
+                    .IsUnicode(false)
+                    .HasColumnName("titulo");
+
+                entity.HasOne(d => d.IdAreaNavigation)
+                    .WithMany(p => p.Tickets)
+                    .HasForeignKey(d => d.IdArea)
+                    .HasConstraintName("FK_Ticket_Area");
+
+                entity.HasOne(d => d.IdCategoriaSopNavigation)
+                    .WithMany(p => p.Tickets)
+                    .HasForeignKey(d => d.IdCategoriaSop)
+                    .HasConstraintName("FK_Ticket_CategoriaSop");
+
+                entity.HasOne(d => d.IdEstadoTiketNavigation)
+                    .WithMany(p => p.Tickets)
+                    .HasForeignKey(d => d.IdEstadoTiket)
+                    .HasConstraintName("FK_Ticket_Estado");
+
+                entity.HasOne(d => d.IdTipoSopNavigation)
+                    .WithMany(p => p.Tickets)
+                    .HasForeignKey(d => d.IdTipoSop)
+                    .HasConstraintName("FK_Ticket_TipoSop");
+
+                entity.HasOne(d => d.IdUsuarioNavigation)
+                    .WithMany(p => p.Tickets)
+                    .HasForeignKey(d => d.IdUsuario)
+                    .HasConstraintName("FK_Ticket_Usuario");
             });
 
             OnModelCreatingPartial(modelBuilder);
