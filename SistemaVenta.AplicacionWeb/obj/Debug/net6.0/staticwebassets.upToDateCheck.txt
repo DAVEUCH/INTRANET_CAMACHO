@@ -14,6 +14,7 @@ wwwroot\img\undraw_profile_1.svg
 wwwroot\img\undraw_profile_2.svg
 wwwroot\img\undraw_profile_3.svg
 wwwroot\img\undraw_rocket.svg
+wwwroot\js\Colector_Index.js
 wwwroot\js\sb-admin-2.js
 wwwroot\js\sb-admin-2.min.js
 wwwroot\js\vistas\Categoria_Index.js

@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\controllers\\colecprodnoenconcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\controllers\\colecprodnoenconcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|d:\\intranet camacho\\solucionsistemaventa\\sistemaventa.aplicacionweb\\views\\colecprodnoencon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CC44BAF4-642B-43E8-BFBA-680D92BCF0BC}|SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj|solutionrelative:sistemaventa.aplicacionweb\\views\\colecprodnoencon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\ColecProdNoEncon\\Index.cshtml",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Views\\ColecProdNoEncon\\Index.cshtml",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Views\\ColecProdNoEncon\\Index.cshtml",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Views\\ColecProdNoEncon\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T22:16:29.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColecProdNoEnconController.cs",
+              "DocumentMoniker": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Controllers\\ColecProdNoEnconController.cs",
+              "RelativeDocumentMoniker": "SistemaVenta.AplicacionWeb\\Controllers\\ColecProdNoEnconController.cs",
+              "ToolTip": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\Controllers\\ColecProdNoEnconController.cs",
+              "RelativeToolTip": "SistemaVenta.AplicacionWeb\\Controllers\\ColecProdNoEnconController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwC4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T22:08:56.036Z",
+              "EditorCaption": ""
             }
           ]
         }

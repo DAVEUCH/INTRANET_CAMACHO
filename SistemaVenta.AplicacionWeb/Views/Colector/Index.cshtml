@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Consulta de Colectores</h4>
+
+<form id="form-busqueda">
+    <div class="form-group">
+        <label for="idAlmacen">Almacén</label>
+        <select id="idAlmacen" name="idAlmacen" class="form-control" required>
+            <option value="">-- Seleccione un almacén --</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="fechaInicio">Fecha Inicio</label>
+        <input type="date" id="fechaInicio" name="fechaInicio" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="fechaFin">Fecha Fin</label>
+        <input type="date" id="fechaFin" name="fechaFin" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Buscar</button>
+    <button type="button" class="btn btn-success" onclick="exportarExcel()">Exportar a Excel</button>
+</form>
+
+<hr />
+
+<table id="tablaResultados" class="table table-bordered table-sm">
+    <thead>
+        <tr>
+            <th>Empresa</th>
+            <th>Almacén</th>
+            <th>Ubicación</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="6" class="text-center">Use los filtros para buscar datos.</td>
+        </tr>
+    </tbody>
+</table>
+
+@section Scripts {
+
+    <!-- Librerías necesarias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        // Función para exportar a Excel
+        function exportarExcel() {
+            var tabla = document.getElementById('tablaResultados');
+            var wb = XLSX.utils.table_to_book(tabla, { sheet: "Colectores" });
+            XLSX.writeFile(wb, 'Reporte_Colectores.xlsx');
+        }
+
+        $(document).ready(function () {
+            // Cargar almacenes al cargar la página
+            $.get("@Url.Action("ListarAlmacenes", "Colector")")
+                .done(function (data) {
+                    data.forEach(a => {
+                        $("#idAlmacen").append(`<option value="${a.id}">${a.descripcion}</option>`);
+                    });
+                })
+                .fail(function () {
+                    alert("Error al cargar almacenes. Verifique su conexión.");
+                });
+
+            // Manejo del formulario
+            $("#form-busqueda").submit(function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("Lista", "Colector")",
+                    data: {
+                        idAlmacen: $("#idAlmacen").val(),
+                        fechaInicio: $("#fechaInicio").val(),
+                        fechaFin: $("#fechaFin").val()
+                    },
+                    success: function (res) {
+                        let filas = "";
+
+                        // Destruir DataTable si ya está inicializado
+                        if ($.fn.DataTable.isDataTable("#tablaResultados")) {
+                            $("#tablaResultados").DataTable().clear().destroy();
+                        }
+
+                        if (res.data.length === 0) {
+                            // Crear una fila vacía pero válida
+                            filas = `<tr>
+                                <td colspan="6" class="text-center">No se encontraron resultados.</td>
+                            </tr>`;
+                        } else {
+                            res.data.forEach(item => {
+                                filas += `<tr>
+                                    <td>${item.empresa}</td>
+                                    <td>${item.almacen}</td>
+                                    <td>${item.ubicacion}</td>
+                                    <td>${item.producto}</td>
+                                    <td>${item.cantidad}</td>
+                                    <td>${item.fecha}</td>
+                                </tr>`;
+                            });
+                        }
+
+                        // Pintar los datos
+                        $("#tablaResultados tbody").html(filas);
+
+                        // Reinicializar DataTable
+                        $("#tablaResultados").DataTable({
+                            pageLength: 10,
+                            lengthMenu: [5, 10, 25, 50, 100],
+                            ordering: true,
+                            searching: true,
+                            language: {
+                                url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/es-ES.json"
+                            }
+                        });
+                    },
+                    error: function (err) {
+                        console.error("Error en la consulta:", err);
+                        alert("Error al obtener los datos del servidor.");
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+
+
+

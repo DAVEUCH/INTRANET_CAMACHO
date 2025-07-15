@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\img\\undraw_rocket.svg"
     },
     {
+      "Id": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\Colector_Index.js",
+      "PackagePath": "staticwebassets\\js\\Colector_Index.js"
+    },
+    {
       "Id": "D:\\INTRANET CAMACHO\\SolucionSistemaVenta\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\sb-admin-2.js",
       "PackagePath": "staticwebassets\\js\\sb-admin-2.js"
     },
