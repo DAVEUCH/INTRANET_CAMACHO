@@ -67,8 +67,8 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                             {
                                 Empresa = reader["Empresa"].ToString(),
                                 Almacen = reader["Almacen"].ToString(),
-                                Codigo = reader["Codigo"].ToString(),
                                 Ubicacion = reader["Ubicacion"].ToString(),
+                                Producto = reader["Producto"].ToString(),
                                 Cantidad = Convert.ToInt32(reader["Cantidad"]),
                                 Fecha = reader["Fecha"].ToString()
 

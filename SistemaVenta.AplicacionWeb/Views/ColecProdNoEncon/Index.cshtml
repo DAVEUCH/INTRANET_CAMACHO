@@ -1,10 +1,9 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Productos No Encontrados";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h4>Reporte Producto con Codigos no Encontrados</h4>
+<h4>Productos No Encontrados en Colector</h4>
 
 <form id="form-busqueda">
     <div class="form-group">
@@ -34,47 +33,41 @@
     <thead>
         <tr>
             <th>Almacén</th>
-            <th>Codigo Producto</th>
-            <th>Ubicacion</th>
+            <th>Ubicación</th>
+            <th>Producto</th>
             <th>Cantidad</th>
             <th>Fecha</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td colspan="5" class="text-center">Use los filtros para buscar datos.</td>
-        </tr>
+        <tr><td colspan="5" class="text-center">Use los filtros para buscar datos.</td></tr>
     </tbody>
 </table>
 
 @section Scripts {
-
-    <!-- Librerías necesarias -->
+    <!-- Librerías -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
     <script>
-        // Función para exportar a Excel
         function exportarExcel() {
-            var tabla = document.getElementById('tablaResultados');
-            var wb = XLSX.utils.table_to_book(tabla, { sheet: "Colectores" });
-            XLSX.writeFile(wb, 'Reporte_Producto_con_codigos_no_encontrados.xlsx');
+            const tabla = document.getElementById('tablaResultados');
+            const wb = XLSX.utils.table_to_book(tabla, { sheet: "NoEncontrados" });
+            XLSX.writeFile(wb, 'Reporte_ProductosNoEncontrados.xlsx');
         }
 
         $(document).ready(function () {
-            // Cargar almacenes al cargar la página
+            // Cargar almacenes
             $.get("@Url.Action("ListarAlmacenes", "ColecProdNoEncon")")
-                .done(function (data) {
+                .done(data => {
                     data.forEach(a => {
                         $("#idAlmacen").append(`<option value="${a.id}">${a.descripcion}</option>`);
                     });
                 })
-                .fail(function () {
-                    alert("Error al cargar almacenes. Verifique su conexión.");
-                });
+                .fail(() => alert("Error al cargar almacenes."));
 
-            // Manejo del formulario
+            // Enviar formulario
             $("#form-busqueda").submit(function (e) {
                 e.preventDefault();
 
@@ -89,33 +82,26 @@
                     success: function (res) {
                         let filas = "";
 
-                        // Destruir DataTable si ya está inicializado
                         if ($.fn.DataTable.isDataTable("#tablaResultados")) {
                             $("#tablaResultados").DataTable().clear().destroy();
                         }
 
                         if (res.data.length === 0) {
-                            // Crear una fila vacía pero válida
-                            filas = `<tr>
-                                <td colspan="6" class="text-center">No se encontraron resultados.</td>
-                            </tr>`;
+                            filas = `<tr><td colspan="6" class="text-center">No se encontraron resultados.</td></tr>`;
                         } else {
                             res.data.forEach(item => {
                                 filas += `<tr>
                                     <td>${item.almacen}</td>
-                                    <td>${item.codigo}</td>
                                     <td>${item.ubicacion}</td>
+                                    <td>${item.producto}</td>
                                     <td>${item.cantidad}</td>
                                     <td>${item.fecha}</td>
-                                    
                                 </tr>`;
                             });
                         }
 
-                        // Pintar los datos
                         $("#tablaResultados tbody").html(filas);
 
-                        // Reinicializar DataTable
                         $("#tablaResultados").DataTable({
                             pageLength: 10,
                             lengthMenu: [5, 10, 25, 50, 100],
@@ -127,7 +113,7 @@
                         });
                     },
                     error: function (err) {
-                        console.error("Error en la consulta:", err);
+                        console.error("Error al obtener los datos del servidor:", err);
                         alert("Error al obtener los datos del servidor.");
                     }
                 });
@@ -135,5 +121,6 @@
         });
     </script>
 }
+
 
 

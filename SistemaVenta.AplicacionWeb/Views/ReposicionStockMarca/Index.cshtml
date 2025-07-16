@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4">Reposición Stock por Marca</h2>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <label>Marca:</label>
+        <select id="cboMarca" class="form-control"></select>
+    </div>
+    <div class="col-md-4">
+        <label>Meses a Comprar:</label>
+        <input type="number" id="txtMeses" class="form-control" min="1" value="3" />
+    </div>
+    <div class="col-md-4 align-self-end">
+        <button class="btn btn-primary" id="btnBuscar">Buscar</button>
+    </div>
+</div>
+
+<hr />
+
+<table id="tbdata" class="table table-bordered table-striped" width="100%">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Cód. Marca</th>
+            <th>Cód. Prod</th>
+            <th>Cód. Interno</th>
+            <th>SEG Marca</th>
+            <th>RFM</th>
+            <th>Score</th>
+            <th>SEG RFM</th>
+            <th>Clientes</th>
+            <th>Proveedor</th>
+            <th>Línea</th>
+            <th>Aplicación</th>
+            <th>Unid</th>
+            <th>Últ Vta</th>
+            <th>Últ Ingreso</th>
+            <th>Últ Fec Ped</th>
+            <th>Últ Fec Ingr</th>
+            <th>Meses Demora</th>
+            <th>Por Llegar</th>
+            <th>1° Llegada</th>
+            <th>Últ Llegada</th>
+            <th>Fecha Stock 0</th>
+            <th>Demora Prom</th>
+            <th>Prom Vta/Mes</th>
+
+            @for (int i = 2020; i <= 2025; i++)
+            {
+                <th>Vtas FRE @i</th>
+            }
+
+            @for (int i = 2020; i <= 2025; i++)
+            {
+                <th>Vtas GCI @i</th>
+            }
+
+            <th>Vta 3M</th>
+            <th>Vta 6M</th>
+            <th>Vta 12M</th>
+            <th>Stock GCI</th>
+            <th>Stock Freddy</th>
+            <th>Stock Grupo</th>
+            <th>Meses Compra</th>
+            <th>Meses Stock</th>
+            <th>Sug Compra</th>
+            <th>Conf Compra</th>
+            <th>Fec Ped Próx</th>
+            <th>Fec Llega</th>
+            <th>Cant Pedida</th>
+            <th>FOB Último</th>
+            <th>Util Bruta</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section Scripts {
+    <script>
+        let tabla;
+
+        $(document).ready(function () {
+            fetch('/ReposicionStockMarca/ListarMarcas')
+                .then(r => r.json())
+                .then(data => {
+                    $("#cboMarca").append(data.map(m => `<option value="${m.id}">${m.descripcion}</option>`));
+                });
+
+            $("#btnBuscar").click(() => {
+                if (!tabla) {
+                    tabla = $("#tbdata").DataTable({
+                        ajax: {
+                            url: '/ReposicionStockMarca/Lista',
+                            type: 'POST',
+                            data: function (d) {
+                                d.idMarca = $("#cboMarca").val();
+                                d.cantmesescomp = $("#txtMeses").val();
+                            }
+                        },
+                        columns: [
+                            { data: "row" },
+                            { data: "codigoMarca" },
+                            { data: "codigo" },
+                            { data: "codigoInterno" },
+                            { data: "segCodigoMarca" },
+                            { data: "puntuación_RFM" },
+                            { data: "sCORE_RFM" },
+                            { data: "seg_RFM" },
+                            { data: "cantClien1" },
+                            { data: "proveedor" },
+                            { data: "linea" },
+                            { data: "aplicacion" },
+                            { data: "unid" },
+                            { data: "ultVta_Fec" },
+                            { data: "ultCant_ingreso" },
+                            { data: "ultFec_Pedido" },
+                            { data: "ultFec_ingreso" },
+                            { data: "mesesDemoraImpor" },
+                            { data: "ultCant_PorLlegar" },
+                            { data: "fec1er_PorLlegar" },
+                            { data: "fecUlt_PorLlegar" },
+                            { data: "fechaSinStock_PorLlegar" },
+                            { data: "mesesPromeDemoraImpor" },
+                            { data: "promCantVtasMes" },
+                            { data: "totVtas_2020_FRE" },
+                            { data: "totVtas_2021_FRE" },
+                            { data: "totVtas_2022_FRE" },
+                            { data: "totVtas_2023_FRE" },
+                            { data: "totVtas_2024_FRE" },
+                            { data: "totVtas_2025_FRE" },
+                            { data: "totVtas_2020_GCI" },
+                            { data: "totVtas_2021_GCI" },
+                            { data: "totVtas_2022_GCI" },
+                            { data: "totVtas_2023_GCI" },
+                            { data: "totVtas_2024_GCI" },
+                            { data: "totVtas_2025_GCI" },
+                            { data: "totVtas_Ult3Mes" },
+                            { data: "totVtas_Ult6Mes" },
+                            { data: "totVtas_Ult12Mes" },
+                            { data: "stock_GCI" },
+                            { data: "stock_Freddy" },
+                            { data: "stockGrupo" },
+                            { data: "numMesesComprar" },
+                            { data: "mesesConStock" },
+                            { data: "cantSugerida_aComprar" },
+                            { data: "cantAComprar_Confir" },
+                            { data: "proxPedido_FechaPide" },
+                            { data: "proxPedido_llega" },
+                            { data: "proxPedido_Cant" },
+                            { data: "ultFOB_ingreso" },
+                            { data: "utilBruta" }
+                        ],
+                        destroy: true,
+                        pageLength: 20,
+                        lengthMenu: [20, 50, 100],
+                        responsive: true,
+                        order: [[0, "asc"]],
+                        language: {
+                            url: '//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json'
+                        }
+                    });
+                } else {
+                    tabla.ajax.reload();
+                }
+            });
+        });
+    </script>
+}
+
+
