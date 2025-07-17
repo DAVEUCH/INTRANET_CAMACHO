@@ -32,6 +32,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/ColecProdNoEncon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZWNQcm9kTm9FbmNvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/ColectorNoInvent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZWN0b3JOb0ludmVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/Colector/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sZWN0b3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/DashBoard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaEJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,12 +92,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/ReporteReStockColector/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVJlU3RvY2tDb2xlY3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/ReporteSalida/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVNhbGlkYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/Reporte/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/ReposicionStockMarca/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3NpY2lvblN0b2NrTWFyY2FcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/INTRANET CAMACHO/SolucionSistemaVenta/SistemaVenta.AplicacionWeb/Views/Rol/Index.cshtml]

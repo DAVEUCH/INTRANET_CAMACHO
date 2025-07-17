@@ -17,6 +17,19 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         {
             _context = context;
         }
+
+        private int SafeToInt(object value)
+        {
+            int result;
+            return int.TryParse(value?.ToString(), out result) ? result : 0;
+        }
+
+        private decimal SafeToDecimal(object value)
+        {
+            decimal result;
+            return decimal.TryParse(value?.ToString(), out result) ? result : 0;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -25,18 +38,18 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         [HttpGet]
         public async Task<IActionResult> ListarMarcas()
         {
-            var marca = await _context.Marca
-                .AsNoTracking() // ✅ evita tracking innecesario
-                .Where(a => new[] { 3, 5, 6, 7, 51 }.Contains(a.Pkid))
-                .Select(a => new VMMarcaCombo
+            var marcas = await _context.Marca
+                .AsNoTracking()
+                .Select(m => new VMMarcaCombo
                 {
-                    Id = a.Pkid,
-                    Descripcion = a.Codigo.Trim() + " - " + a.Descripcion.Trim()
+                    Id = m.Pkid,
+                    Descripcion = m.Descripcion.Trim()
                 })
                 .ToListAsync();
 
-            return Json(marca);
+            return Json(marcas);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Lista(int idMarca, int cantmesescomp)
@@ -64,59 +77,61 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                         {
                             data.Add(new VMReposicionMarca
                             {
-                                Row = Convert.ToInt32(reader["Row"]),
+                                Row = SafeToInt(reader["Row"]),
                                 CodigoMarca = reader["CodigoMarca"].ToString(),
                                 Codigo = reader["Codigo"].ToString(),
                                 CodigoInterno = reader["CodigoInterno"].ToString(),
                                 SEGCodigoMarca = reader["SEGCodigoMarca"].ToString(),
-                                Puntuación_RFM = Convert.ToDecimal(reader["Puntuación_RFM"]),
-                                SCORE_RFM = Convert.ToDecimal(reader["SCORE_RFM"]),
-                                SEG_RFM = Convert.ToDecimal(reader["SEG_RFM"]),
-                                CantClien1 = Convert.ToInt32(reader["CantClien1"]),
+                                Puntuación_RFM = SafeToDecimal(reader["Puntuación_RFM"]),
+                                SCORE_RFM = SafeToDecimal(reader["SCORE_RFM"]),
+                                SEG_RFM = SafeToDecimal(reader["SEG_RFM"]),
+                                CantClien1 = SafeToInt(reader["CantClien1"]),
                                 Proveedor = reader["Proveedor"].ToString(),
                                 Linea = reader["Linea"].ToString(),
                                 Aplicacion = reader["Aplicacion"].ToString(),
                                 Unid = reader["Unid"].ToString(),
                                 UltVta_Fec = reader["UltVta_Fec"].ToString(),
-                                UltCant_ingreso = Convert.ToInt32(reader["UltCant_ingreso"]),
+                                UltCant_ingreso = SafeToInt(reader["UltCant_ingreso"]),
                                 UltFec_Pedido = reader["UltFec_Pedido"].ToString(),
                                 UltFec_ingreso = reader["UltFec_ingreso"].ToString(),
-                                MesesDemoraImpor = Convert.ToDecimal(reader["MesesDemoraImpor"]),
-                                UltCant_PorLlegar = Convert.ToInt32(reader["UltCant_PorLlegar"]),
+                                MesesDemoraImpor = SafeToDecimal(reader["MesesDemoraImpor"]),
+                                UltCant_PorLlegar = SafeToInt(reader["UltCant_PorLlegar"]),
                                 Fec1er_PorLlegar = reader["Fec1er_PorLlegar"].ToString(),
                                 FecUlt_PorLlegar = reader["FecUlt_PorLlegar"].ToString(),
                                 FechaSinStock_PorLlegar = reader["FechaSinStock_PorLlegar"].ToString(),
-                                MesesPromeDemoraImpor = Convert.ToDecimal(reader["MesesPromeDemoraImpor"]),
-                                PromCantVtasMes = Convert.ToDecimal(reader["PromCantVtasMes"]),
-                                TotVtas_2020_FRE = Convert.ToInt32(reader["TotVtas_2020_FRE"]),
-                                TotVtas_2021_FRE = Convert.ToInt32(reader["TotVtas_2021_FRE"]),
-                                TotVtas_2022_FRE = Convert.ToInt32(reader["TotVtas_2022_FRE"]),
-                                TotVtas_2023_FRE = Convert.ToInt32(reader["TotVtas_2023_FRE"]),
-                                TotVtas_2024_FRE = Convert.ToInt32(reader["TotVtas_2024_FRE"]),
-                                TotVtas_2025_FRE = Convert.ToInt32(reader["TotVtas_2025_FRE"]),
-                                TotVtas_2020_GCI = Convert.ToInt32(reader["TotVtas_2020_GCI"]),
-                                TotVtas_2021_GCI = Convert.ToInt32(reader["TotVtas_2021_GCI"]),
-                                TotVtas_2022_GCI = Convert.ToInt32(reader["TotVtas_2022_GCI"]),
-                                TotVtas_2023_GCI = Convert.ToInt32(reader["TotVtas_2023_GCI"]),
-                                TotVtas_2024_GCI = Convert.ToInt32(reader["TotVtas_2024_GCI"]),
-                                TotVtas_2025_GCI = Convert.ToInt32(reader["TotVtas_2025_GCI"]),
-                                TotVtas_Ult3Mes = Convert.ToInt32(reader["TotVtas_Ult3Mes"]),
-                                TotVtas_Ult6Mes = Convert.ToInt32(reader["TotVtas_Ult6Mes"]),
-                                TotVtas_Ult12Mes = Convert.ToInt32(reader["TotVtas_Ult12Mes"]),
-                                Stock_GCI = Convert.ToInt32(reader["Stock_GCI"]),
-                                Stock_Freddy = Convert.ToInt32(reader["Stock_Freddy"]),
-                                StockGrupo = Convert.ToInt32(reader["StockGrupo"]),
-                                NumMesesComprar = Convert.ToInt32(reader["NumMesesComprar"]),
-                                MesesConStock = Convert.ToInt32(reader["MesesConStock"]),
-                                CantSugerida_aComprar = Convert.ToInt32(reader["CantSugerida_aComprar"]),
-                                CantAComprar_Confir = Convert.ToInt32(reader["CantAComprar_Confir"]),
+                                MesesPromeDemoraImpor = SafeToDecimal(reader["MesesPromeDemoraImpor"]),
+                                PromCantVtasMes = SafeToDecimal(reader["PromCantVtasMes"]),
+                                TotVtas_2020_FRE = SafeToInt(reader["TotVtas_2020_FRE"]),
+                                TotVtas_2021_FRE = SafeToInt(reader["TotVtas_2021_FRE"]),
+                                TotVtas_2022_FRE = SafeToInt(reader["TotVtas_2022_FRE"]),
+                                TotVtas_2023_FRE = SafeToInt(reader["TotVtas_2023_FRE"]),
+                                TotVtas_2024_FRE = SafeToInt(reader["TotVtas_2024_FRE"]),
+                                TotVtas_2025_FRE = SafeToInt(reader["TotVtas_2025_FRE"]),
+                                TotVtas_2020_GCI = SafeToInt(reader["TotVtas_2020_GCI"]),
+                                TotVtas_2021_GCI = SafeToInt(reader["TotVtas_2021_GCI"]),
+                                TotVtas_2022_GCI = SafeToInt(reader["TotVtas_2022_GCI"]),
+                                TotVtas_2023_GCI = SafeToInt(reader["TotVtas_2023_GCI"]),
+                                TotVtas_2024_GCI = SafeToInt(reader["TotVtas_2024_GCI"]),
+                                TotVtas_2025_GCI = SafeToInt(reader["TotVtas_2025_GCI"]),
+                                TotVtas_Ult3Mes = SafeToInt(reader["TotVtas_Ult3Mes"]),
+                                TotVtas_Ult6Mes = SafeToInt(reader["TotVtas_Ult6Mes"]),
+                                TotVtas_Ult9Mes = SafeToInt(reader["TotVtas_Ult9Mes"]),
+                                TotVtas_Ult12Mes = SafeToInt(reader["TotVtas_Ult12Mes"]),
+                                Stock_GCI = SafeToInt(reader["Stock_GCI"]),
+                                Stock_Freddy = SafeToInt(reader["Stock_Freddy"]),
+                                StockGrupo = SafeToInt(reader["StockGrupo"]),
+                                NumMesesComprar = SafeToInt(reader["NumMesesComprar"]),
+                                MesesConStock = SafeToInt(reader["MesesConStock"]),
+                                CantSugerida_aComprar = SafeToInt(reader["CantSugerida_aComprar"]),
+                                CantAComprar_Confir = SafeToInt(reader["CantAComprar_Confir"]),
                                 ProxPedido_FechaPide = reader["ProxPedido_FechaPide"].ToString(),
                                 ProxPedido_llega = reader["ProxPedido_llega"].ToString(),
-                                ProxPedido_Cant = Convert.ToInt32(reader["ProxPedido_Cant"]),
-                                UltFOB_ingreso = Convert.ToDecimal(reader["UltFOB_ingreso"]),
-                                UtilBruta = Convert.ToDecimal(reader["UtilBruta"]),
-                                IDMarca = Convert.ToInt32(reader["IDMarca"])
+                                ProxPedido_Cant = SafeToInt(reader["ProxPedido_Cant"]),
+                                UltFOB_ingreso = SafeToDecimal(reader["UltFOB_ingreso"]),
+                                UtilBruta = SafeToDecimal(reader["UtilBruta"]),
+                                IDMarca = SafeToInt(reader["IDMarca"])
                             });
+
                         }
                     }
                 }

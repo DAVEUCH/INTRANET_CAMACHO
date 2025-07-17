@@ -1,106 +1,165 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Reposición por Marca";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2 class="mb-4">Reposición Stock por Marca</h2>
+<h2>@ViewData["Title"]</h2>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css" />
 
 <div class="row mb-3">
     <div class="col-md-4">
-        <label>Marca:</label>
-        <select id="cboMarca" class="form-control"></select>
+        <label>Marca</label>
+        <select class="form-control" id="cboMarca">
+            <option value="">-- Seleccione Marca --</option>
+        </select>
     </div>
-    <div class="col-md-4">
-        <label>Meses a Comprar:</label>
-        <input type="number" id="txtMeses" class="form-control" min="1" value="3" />
+    <div class="col-md-2">
+        <label>Meses</label>
+        <input type="number" class="form-control" id="txtMeses" value="3" min="1" />
     </div>
-    <div class="col-md-4 align-self-end">
+    <div class="col-md-2 d-flex align-items-end">
         <button class="btn btn-primary" id="btnBuscar">Buscar</button>
     </div>
 </div>
 
-<hr />
-
-<table id="tbdata" class="table table-bordered table-striped" width="100%">
-    <thead>
-        <tr>
-            <th>Item</th>
-            <th>Cód. Marca</th>
-            <th>Cód. Prod</th>
-            <th>Cód. Interno</th>
-            <th>SEG Marca</th>
-            <th>RFM</th>
-            <th>Score</th>
-            <th>SEG RFM</th>
-            <th>Clientes</th>
-            <th>Proveedor</th>
-            <th>Línea</th>
-            <th>Aplicación</th>
-            <th>Unid</th>
-            <th>Últ Vta</th>
-            <th>Últ Ingreso</th>
-            <th>Últ Fec Ped</th>
-            <th>Últ Fec Ingr</th>
-            <th>Meses Demora</th>
-            <th>Por Llegar</th>
-            <th>1° Llegada</th>
-            <th>Últ Llegada</th>
-            <th>Fecha Stock 0</th>
-            <th>Demora Prom</th>
-            <th>Prom Vta/Mes</th>
-
-            @for (int i = 2020; i <= 2025; i++)
-            {
-                <th>Vtas FRE @i</th>
-            }
-
-            @for (int i = 2020; i <= 2025; i++)
-            {
-                <th>Vtas GCI @i</th>
-            }
-
-            <th>Vta 3M</th>
-            <th>Vta 6M</th>
-            <th>Vta 12M</th>
-            <th>Stock GCI</th>
-            <th>Stock Freddy</th>
-            <th>Stock Grupo</th>
-            <th>Meses Compra</th>
-            <th>Meses Stock</th>
-            <th>Sug Compra</th>
-            <th>Conf Compra</th>
-            <th>Fec Ped Próx</th>
-            <th>Fec Llega</th>
-            <th>Cant Pedida</th>
-            <th>FOB Último</th>
-            <th>Util Bruta</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered display nowrap" id="tbdata" style="width:100%">
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>Cod Marca</th>
+                <th>Código</th>
+                <th>Cod Interno</th>
+                <th>SEG Cod Marca</th>
+                <th>RFM</th>
+                <th>Score RFM</th>
+                <th>SEG RFM</th>
+                <th>Clientes</th>
+                <th>Proveedor</th>
+                <th>Línea</th>
+                <th>Aplicación</th>
+                <th>Unid</th>
+                <th>Ult Vta</th>
+                <th>Ult Ingreso</th>
+                <th>Fec Pedido</th>
+                <th>Fec Ingreso</th>
+                <th>Meses Demora</th>
+                <th>Por Llegar</th>
+                <th>1er Llegada</th>
+                <th>Ult Llegada</th>
+                <th>Fec Sin Stock</th>
+                <th>Prom Demora</th>
+                <th>Prom Vtas/Mes</th>
+                <th>2020 FRE</th>
+                <th>2021 FRE</th>
+                <th>2022 FRE</th>
+                <th>2023 FRE</th>
+                <th>2024 FRE</th>
+                <th>2025 FRE</th>
+                <th>2020 GCI</th>
+                <th>2021 GCI</th>
+                <th>2022 GCI</th>
+                <th>2023 GCI</th>
+                <th>2024 GCI</th>
+                <th>2025 GCI</th>
+                <th>Vtas 3M</th>
+                <th>Vtas 6M</th>
+                <th>Vtas 9M</th>
+                <th>Vtas 12M</th>
+                <th>Stock GCI</th>
+                <th>Stock Freddy</th>
+                <th>Stock Grupo</th>
+                <th>Meses Compra</th>
+                <th>Meses c/Stock</th>
+                <th>Sug Compra</th>
+                <th>Compra Conf</th>
+                <th>Fec Pide</th>
+                <th>Llega</th>
+                <th>Cant Pedido</th>
+                <th>FOB Ult</th>
+                <th>Util Bruta</th>
+            </tr>
+        </thead>
+    </table>
+</div>
 
 @section Scripts {
+    <!-- Scripts base -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <!-- Exportar + Botones -->
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
     <script>
         let tabla;
+        $.noConflict();
 
-        $(document).ready(function () {
+        jQuery(document).ready(function ($) {
+            console.log("📦 Documento listo. Cargando marcas...");
+
             fetch('/ReposicionStockMarca/ListarMarcas')
-                .then(r => r.json())
+                .then(response => response.json())
                 .then(data => {
-                    $("#cboMarca").append(data.map(m => `<option value="${m.id}">${m.descripcion}</option>`));
-                });
+                    console.log("✅ Marcas recibidas:", data);
+                    const options = data.map(m => `<option value="${m.id}">${m.descripcion}</option>`);
+                    $("#cboMarca").append(options);
+                })
+                .catch(error => console.error("❌ Error cargando marcas:", error));
 
             $("#btnBuscar").click(() => {
+                const idMarca = $("#cboMarca").val();
+                const meses = $("#txtMeses").val();
+
+                if (!idMarca) return alert("Seleccione una marca.");
+                if (!meses || meses <= 0) return alert("Ingrese un número válido de meses.");
+
                 if (!tabla) {
+                    console.log("🧩 Inicializando DataTable...");
+
                     tabla = $("#tbdata").DataTable({
                         ajax: {
                             url: '/ReposicionStockMarca/Lista',
                             type: 'POST',
-                            data: function (d) {
-                                d.idMarca = $("#cboMarca").val();
-                                d.cantmesescomp = $("#txtMeses").val();
+                            data: () => ({
+                                idMarca: idMarca,
+                                cantmesescomp: meses
+                            }),
+                            dataSrc: json => {
+                                console.log("📨 Respuesta del backend:", json);
+                                return json.data || json;
+                            },
+                            error: (xhr, status, error) => {
+                                console.error("❌ Error en AJAX:", error);
+                                console.log("🧾 Detalles:", xhr.responseText);
                             }
+                        },
+                        scrollX: true,
+                        responsive: true,
+                        dom: 'Bfrtip',
+                        buttons: [
+                            {
+                                extend: 'excelHtml5',
+                                title: 'Reposicion_Marca',
+                                text: 'Exportar Excel',
+                                className: 'btn btn-success'
+                            },
+                            {
+                                extend: 'colvis',
+                                text: 'Mostrar/Ocultar columnas',
+                                className: 'btn btn-secondary'
+                            }
+                        ],
+                        pageLength: 20,
+                        lengthMenu: [20, 50, 100],
+                        language: {
+                            url: '//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json'
                         },
                         columns: [
                             { data: "row" },
@@ -108,9 +167,9 @@
                             { data: "codigo" },
                             { data: "codigoInterno" },
                             { data: "segCodigoMarca" },
-                            { data: "puntuación_RFM" },
-                            { data: "sCORE_RFM" },
-                            { data: "seg_RFM" },
+                            { data: "puntuación_RFM", render: $.fn.dataTable.render.number(',', '.', 2) },
+                            { data: "scorE_RFM", render: $.fn.dataTable.render.number(',', '.', 2) },
+                            { data: "seG_RFM", render: $.fn.dataTable.render.number(',', '.', 2) },
                             { data: "cantClien1" },
                             { data: "proveedor" },
                             { data: "linea" },
@@ -120,13 +179,13 @@
                             { data: "ultCant_ingreso" },
                             { data: "ultFec_Pedido" },
                             { data: "ultFec_ingreso" },
-                            { data: "mesesDemoraImpor" },
+                            { data: "mesesDemoraImpor", render: $.fn.dataTable.render.number(',', '.', 2) },
                             { data: "ultCant_PorLlegar" },
                             { data: "fec1er_PorLlegar" },
                             { data: "fecUlt_PorLlegar" },
                             { data: "fechaSinStock_PorLlegar" },
-                            { data: "mesesPromeDemoraImpor" },
-                            { data: "promCantVtasMes" },
+                            { data: "mesesPromeDemoraImpor", render: $.fn.dataTable.render.number(',', '.', 2) },
+                            { data: "promCantVtasMes", render: $.fn.dataTable.render.number(',', '.', 2) },
                             { data: "totVtas_2020_FRE" },
                             { data: "totVtas_2021_FRE" },
                             { data: "totVtas_2022_FRE" },
@@ -141,6 +200,7 @@
                             { data: "totVtas_2025_GCI" },
                             { data: "totVtas_Ult3Mes" },
                             { data: "totVtas_Ult6Mes" },
+                            { data: "totVtas_Ult9Mes" },
                             { data: "totVtas_Ult12Mes" },
                             { data: "stock_GCI" },
                             { data: "stock_Freddy" },
@@ -152,24 +212,22 @@
                             { data: "proxPedido_FechaPide" },
                             { data: "proxPedido_llega" },
                             { data: "proxPedido_Cant" },
-                            { data: "ultFOB_ingreso" },
-                            { data: "utilBruta" }
-                        ],
-                        destroy: true,
-                        pageLength: 20,
-                        lengthMenu: [20, 50, 100],
-                        responsive: true,
-                        order: [[0, "asc"]],
-                        language: {
-                            url: '//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json'
-                        }
+                            { data: "ultFOB_ingreso", render: $.fn.dataTable.render.number(',', '.', 2) },
+                            { data: "utilBruta", render: $.fn.dataTable.render.number(',', '.', 2) }
+                        ]
                     });
+
                 } else {
+                    console.log("🔄 Refrescando datos de la tabla...");
                     tabla.ajax.reload();
                 }
             });
         });
     </script>
 }
+
+
+
+
 
 
